@@ -1,0 +1,20 @@
+name = "PJHQ Patches - TRF UKAF"
+author = "N. Home"
+prefix = "patch_trfukaf"
+mainprefix = "pjhq"
+
+[files]
+include = ["mod.cpp", "meta.cpp", "logo_pjhq_ca.paa", "LICENSE", "keys/*.bikey", "addons/*.pbo"]
+
+[version]
+major = 0
+minor = 1
+patch = 0
+git_hash = 0
+
+[hemtt.release]
+sign = true
+archive = false
+
+[hemtt.dev]
+name = "[TESTING] PJHQ Patches - TRF UKAF"

@@ -1,0 +1,29 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Ensure every file ends with a newline
+[*]
+insert_final_newline = true
+charset = utf-8
+trim_trailing_whitespace = true
+
+# Tab indentation (size 4) for C++ and SQF files
+[*.{cpp,hpp,sqf}]
+indent_style = tab
+indent_size = 2
+
+# 2 space indentation for JSON and XML files
+[*.{json,xml}]
+indent_style = space
+indent_size = 2
+
+# 4 space indentation for Markdown files
+[*.md]
+indent_style = space
+indent_size = 2
+
+# Specific settings for makefiles
+[{Makefile,makefile,*.mk}]
+indent_style = tab
