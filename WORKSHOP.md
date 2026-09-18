@@ -1,10 +1,10 @@
 [h1]PJHQ Patch - TRF UKAF[/h1]
-A config-only compatibility and balance patch for TRF UKAF. It normalizes armor protection and cleans soldier gear proxy classes out of Eden and Zeus placement.
+A config-only compatibility and balance patch for TRF UKAF. It normalizes armor protection and hides uniform-body CfgVehicles classes from Eden and Zeus placement.
 
 [h1]Summary[/h1]
 [list]
 [*]Rebalances 13 helmets and 24 vests.
-[*]Hides 103 unique classes from Eden/Zeus placement (121 component declarations, including 18 overlapping PCS proxy declarations).
+[*]Hides 103 unique CfgVehicles classes from Eden/Zeus placement using 121 component declarations; 18 PCS uniform classes are declared in both insignia component patches.
 [*]Leaves scopeArsenal unchanged, so source gear remains available in the Arsenal.
 [*]Changes config values only; no models, textures, sounds, scripts or event handlers are replaced.
 [/list]
