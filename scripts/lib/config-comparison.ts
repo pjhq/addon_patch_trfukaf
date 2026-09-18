@@ -320,10 +320,11 @@ export async function compareConfigs(root: string, addons: PatchTargets[], refre
   if (!hemttPath) {
     throw new Error("HEMTT is not available on PATH");
   }
-  const baselinePath = path.join(root, "scripts", "config-baselines.json");
+  const baselinePath = path.join(root, "source_addons", "config-baselines.json");
   const temporaryRoot = await mkdtemp(path.join(tmpdir(), "patch-trfukaf-docs-"));
   try {
-    if (refresh) {
+    const baselineStats = await stat(baselinePath).catch(() => undefined);
+    if (refresh || !baselineStats?.isFile()) {
       const refreshed = await refreshBaselines(root, addons, hemttPath, temporaryRoot);
       await writeFile(baselinePath, `${JSON.stringify(refreshed, null, 2)}\n`, "utf8");
       console.log(`Generated ${path.relative(root, baselinePath)}`);

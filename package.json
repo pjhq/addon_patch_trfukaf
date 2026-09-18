@@ -4,7 +4,8 @@
   "type": "module",
   "module": "index.ts",
   "scripts": {
-    "start": "bun run extract && bun run audit && bun run docs",
+    "start": "bun run extract && bun run audit && bun run docs:refresh",
+    "build": "bun run audit && bun run docs:refresh",
     "check": "oxfmt --write && oxlint --type-aware --type-check --fix",
     "docs": "bun run scripts/generate-docs.ts",
     "docs:check": "bun run scripts/generate-docs.ts --check",
