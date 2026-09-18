@@ -1,6 +1,11 @@
 [h1]PJHQ Patch - TRF UKAF[/h1]
 A config-only compatibility and balance patch for TRF UKAF. It normalizes armor protection and hides uniform-body CfgVehicles classes from Eden and Zeus placement.
 
+JOIN US TODAY:
+[url=https://pjhq.uk/?utm_source=steam_trfukaf&utm_medium=referral]Website[/url]
+[url=https://media.pjhq.uk/?utm_source=steam_trfukaf&utm_medium=referral]Media[/url]
+[url=https://discord.pjhq.uk/?utm_source=steam_trfukaf&utm_medium=referral]Discord[/url]
+
 [h1]Summary[/h1]
 [list]
 [*]Rebalances 13 helmets and 24 vests.
