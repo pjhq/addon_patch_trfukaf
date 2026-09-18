@@ -1,6 +1,6 @@
 # Damage And Armor Reference
 
-This document explains how Arma 3 ammunition and personal armor configuration values interact, with practical examples from RHS USAF 0.5.6 and the armor values used by this patch.
+This document explains how Arma 3 ammunition and personal armor configuration values interact, with practical examples from RHS USAF and RHS AFRF 0.5.6 and the armor values used by this patch.
 
 The calculations are useful for comparing equipment, but they are not exact shot-to-kill predictions. Impact angle, impact velocity, hitpoint selection, dependent hitpoints, global damage, and medical mods can all change the final result.
 
@@ -152,6 +152,47 @@ The table demonstrates the difference between damage and penetration:
 - M993 AP inherits the same `hit` as M80 but has over three times its penetration.
 - 9x19 JHP has more soft-target `hit` but less penetration than 9x19 FMJ.
 
+## RHS AFRF Ammunition
+
+These values come from RHS AFRF 0.5.6, Workshop item `843425103`, in `rhs_c_weapons.pbo` and `rhs_c_heavyweapons.pbo`. The calculations assume that each projectile impacts at its configured `typicalSpeed`.
+
+| RHS round                  | `hit` | `caliber` | Typical speed | Approx. penetration | Vanilla local damage against armor 28 |
+| -------------------------- | ----: | --------: | ------------: | ------------------: | ------------------------------------: |
+| 9x18 57-N-181S             |  5.07 |     0.838 |           272 |             3.42 mm |                                 0.087 |
+| 9x19 7N21                  |  5.97 |     0.838 |           393 |             4.94 mm |                                 0.103 |
+| 9x19 7N31                  |  8.97 |     0.952 |           460 |             6.57 mm |                                 0.155 |
+| 9x21 7N28                  |  7.07 |     1.200 |           390 |             7.02 mm |                                 0.122 |
+| 9x21 7N29                  |  9.47 |     1.200 |           410 |             7.38 mm |                                 0.163 |
+| 9x21 7BT3 tracer           |  9.07 |     1.200 |           400 |             7.20 mm |                                 0.156 |
+| 9x39 SP-5                  |  9.50 |     0.222 |           295 |             0.98 mm |                                 0.164 |
+| 9x39 SP-6                  | 11.30 |     0.952 |           295 |             4.21 mm |                                 0.195 |
+| 5.45x39 7N6                |  9.30 |     0.232 |           880 |             3.06 mm |                                 0.160 |
+| 5.45x39 7N10               |  9.50 |     0.618 |           880 |             8.16 mm |                                 0.164 |
+| 5.45x39 7N22               | 10.10 |     0.940 |           890 |            12.55 mm |                                 0.174 |
+| 5.45x39 7N24               | 11.80 |     1.490 |           890 |            19.89 mm |                                 0.203 |
+| 5.45x39 7U1 subsonic       |  3.86 |     0.216 |           303 |             0.98 mm |                                 0.067 |
+| 7.62x39 57-N-231           |  8.50 |     0.550 |           718 |             5.92 mm |                                 0.147 |
+| 7.62x39 PS 1989            |  9.80 |     0.929 |           718 |            10.00 mm |                                 0.169 |
+| 7.62x39 57-N-231U subsonic |  5.79 |     0.455 |           293 |             2.00 mm |                                 0.100 |
+| 7.62x54R 57-N-323S         | 11.47 |     0.341 |           828 |             4.24 mm |                                 0.198 |
+| 7.62x54R 7N1               | 11.59 |     0.900 |           823 |            11.11 mm |                                 0.200 |
+| 7.62x54R 7N13              | 12.95 |     1.003 |           828 |            12.45 mm |                                 0.223 |
+| 7.62x54R 7N14              | 13.61 |     0.915 |           823 |            11.29 mm |                                 0.235 |
+| 7.62x54R 7BZ3 API          | 15.47 |     1.027 |           808 |            12.45 mm |                                 0.267 |
+| 7.62x54R 7N26              | 14.47 |     1.109 |           835 |            13.89 mm |                                 0.249 |
+| 12.7x108                   | 25.00 |     2.800 |           820 |            34.44 mm |                                 0.431 |
+| 14.5x114 BS-41             | 25.00 |     2.767 |           988 |            41.00 mm |                                 0.431 |
+| 14.5x114 BS-32             | 25.00 |     2.058 |           988 |            30.50 mm |                                 0.431 |
+
+Tracer variants that inherit identical damage and penetration are omitted. The 9x21 7BT3 tracer is included because it has distinct `hit` and speed values.
+
+The AFRF values show the same separation between soft-target damage and penetration:
+
+- The 5.45x39 family progresses from `3.06 mm` for 7N6 to `19.89 mm` for 7N24, while simplified vanilla local damage only rises from `0.160` to `0.203`.
+- The subsonic 9x39 SP-5 has `hit = 9.5` but only `0.98 mm` approximate penetration. SP-6 raises penetration to `4.21 mm` and `hit` to `11.3`.
+- The hardened 7.62x39 PS 1989 round has approximately `10.00 mm` penetration compared with `5.92 mm` for 57-N-231.
+- The 7.62x54R AP/API family reaches approximately `11.11-13.89 mm`, compared with `4.24 mm` for 57-N-323S.
+
 ## ACE Medical Model
 
 ACE Medical's Alternate Armor Penetration setting is enabled by default in the checked ACE source. When enabled, ACE derives a discrete armor level from the Arma equipment armor value and assigns an approximate RHA thickness.
@@ -181,9 +222,11 @@ The resulting value is ACE wound-handler input, not vanilla health percentage.
 
 Because `rhsusf_spc` uses `armor = 28`, ACE treats it as Level V with `55 mm` RHA-equivalent thickness, even though RHS describes the vest as "Armor Level IV".
 
+#### RHS USAF Rounds
+
 | RHS round    | Approx. penetration | ACE wound damage against 55 mm |
 | ------------ | ------------------: | -----------------------------: |
-| 9x19 FMJ     |             3.94 mm |                          0.036 |
+| 9x19 FMJ     |             3.94 mm |                          0.035 |
 | 9x19 JHP     |             1.88 mm |                          0.024 |
 | 5.56 M855    |             6.26 mm |                          0.102 |
 | 5.56 M855A1  |             9.36 mm |                          0.153 |
@@ -196,7 +239,37 @@ Because `rhsusf_spc` uses `armor = 28`, ACE treats it as Level V with `55 mm` RH
 | 7.62 M118    |             6.28 mm |                          0.132 |
 | 7.62 M993 AP |            19.27 mm |                          0.405 |
 | .50 M33      |            12.89 mm |                          0.593 |
-| .50 Mk211    |            25.87 mm |   1.168 plus explosive effects |
+| .50 Mk211    |            25.87 mm |   1.167 plus explosive effects |
+
+#### RHS AFRF Rounds
+
+| RHS round                  | Approx. penetration | ACE wound damage against 55 mm |
+| -------------------------- | ------------------: | -----------------------------: |
+| 9x18 57-N-181S             |             3.42 mm |                          0.032 |
+| 9x19 7N21                  |             4.94 mm |                          0.054 |
+| 9x19 7N31                  |             6.57 mm |                          0.107 |
+| 9x21 7N28                  |             7.02 mm |                          0.090 |
+| 9x21 7N29                  |             7.38 mm |                          0.127 |
+| 9x21 7BT3 tracer           |             7.20 mm |                          0.119 |
+| 9x39 SP-5                  |             0.98 mm |                          0.017 |
+| 9x39 SP-6                  |             4.21 mm |                          0.087 |
+| 5.45x39 7N6                |             3.06 mm |                          0.052 |
+| 5.45x39 7N10               |             8.16 mm |                          0.141 |
+| 5.45x39 7N22               |            12.55 mm |                          0.230 |
+| 5.45x39 7N24               |            19.89 mm |                          0.427 |
+| 5.45x39 7U1 subsonic       |             0.98 mm |                          0.007 |
+| 7.62x39 57-N-231           |             5.92 mm |                          0.092 |
+| 7.62x39 PS 1989            |            10.00 mm |                          0.178 |
+| 7.62x39 57-N-231U subsonic |             2.00 mm |                          0.021 |
+| 7.62x54R 57-N-323S         |             4.24 mm |                          0.088 |
+| 7.62x54R 7N1               |            11.11 mm |                          0.234 |
+| 7.62x54R 7N13              |            12.45 mm |                          0.293 |
+| 7.62x54R 7N14              |            11.29 mm |                          0.279 |
+| 7.62x54R 7BZ3 API          |            12.45 mm |                          0.350 |
+| 7.62x54R 7N26              |            13.89 mm |                          0.366 |
+| 12.7x108                   |            34.44 mm |                          1.565 |
+| 14.5x114 BS-41             |            41.00 mm |                          1.864 |
+| 14.5x114 BS-32             |            30.50 mm |                          1.386 |
 
 ACE generally turns values below approximately `0.35` into plate-impact contusions rather than penetrating velocity wounds. This makes the distinction between ball and AP ammunition more visible than the simplified vanilla `hit / armor` calculation.
 
@@ -216,6 +289,8 @@ The values below are ACE wound-damage inputs: a higher number means a more sever
 
 **Key:** `A` = armor, `PT` = pass-through.
 
+#### RHS USAF Rounds
+
 | RHS round    |        Before A: 24, PT: 0.1 | Chest/abdomen A: 15, PT: 0.2 |     Diaphragm A: 18, PT: 0.2 |
 | ------------ | ---------------------------: | ---------------------------: | ---------------------------: |
 | 9x19 FMJ     |                        0.035 |                        0.093 |                        0.049 |
@@ -233,7 +308,39 @@ The values below are ACE wound-damage inputs: a higher number means a more sever
 | .50 M33      |                        0.593 |                        1.554 |                        0.816 |
 | .50 Mk211    | 1.167 plus explosive effects | 2.481 plus explosive effects | 1.605 plus explosive effects |
 
+#### RHS AFRF Rounds
+
+| RHS round                  | Before A: 24, PT: 0.1 | Chest/abdomen A: 15, PT: 0.2 | Diaphragm A: 18, PT: 0.2 |
+| -------------------------- | --------------------: | ---------------------------: | -----------------------: |
+| 9x18 57-N-181S             |                 0.032 |                        0.083 |                    0.043 |
+| 9x19 7N21                  |                 0.054 |                        0.141 |                    0.074 |
+| 9x19 7N31                  |                 0.107 |                        0.281 |                    0.147 |
+| 9x21 7N28                  |                 0.090 |                        0.236 |                    0.124 |
+| 9x21 7N29                  |                 0.127 |                        0.333 |                    0.175 |
+| 9x21 7BT3 tracer           |                 0.119 |                        0.311 |                    0.163 |
+| 9x39 SP-5                  |                 0.017 |                        0.044 |                    0.023 |
+| 9x39 SP-6                  |                 0.087 |                        0.227 |                    0.119 |
+| 5.45x39 7N6                |                 0.052 |                        0.136 |                    0.071 |
+| 5.45x39 7N10               |                 0.141 |                        0.369 |                    0.194 |
+| 5.45x39 7N22               |                 0.230 |                        0.603 |                    0.317 |
+| 5.45x39 7N24               |                 0.427 |                        1.118 |                    0.587 |
+| 5.45x39 7U1 subsonic       |                 0.007 |                        0.018 |                    0.009 |
+| 7.62x39 57-N-231           |                 0.092 |                        0.240 |                    0.126 |
+| 7.62x39 PS 1989            |                 0.178 |                        0.467 |                    0.245 |
+| 7.62x39 57-N-231U subsonic |                 0.021 |                        0.055 |                    0.029 |
+| 7.62x54R 57-N-323S         |                 0.088 |                        0.231 |                    0.121 |
+| 7.62x54R 7N1               |                 0.234 |                        0.613 |                    0.322 |
+| 7.62x54R 7N13              |                 0.293 |                        0.768 |                    0.403 |
+| 7.62x54R 7N14              |                 0.279 |                        0.732 |                    0.384 |
+| 7.62x54R 7BZ3 API          |                 0.350 |                        0.917 |                    0.482 |
+| 7.62x54R 7N26              |                 0.366 |                        0.957 |                    0.503 |
+| 12.7x108                   |                 1.565 |                        2.500 |                    2.152 |
+| 14.5x114 BS-41             |                 1.864 |                        2.500 |                    2.500 |
+| 14.5x114 BS-32             |                 1.386 |                        2.500 |                    1.906 |
+
 For M855A1, the ACE wound value increases from `0.153` before the patch to `0.401` on the patched chest or abdomen and `0.211` on the patched diaphragm. The chest/abdomen result is approximately 2.6 times the original value, while the diaphragm result is approximately 1.4 times the original value.
+
+For AFRF ammunition, 5.45x39 7N6 increases from `0.052` to `0.136` on the patched chest or abdomen, while the AP-oriented 7N24 increases from `0.427` to `1.118`. The patched diaphragm produces lower values of `0.071` and `0.587`, respectively.
 
 The patch also changes torso `passThrough` from `0.1` to `0.2`. That approximately doubles the vanilla damage transferred through the same base hitpoint, independently of the ACE armor-thickness differences shown above.
 
@@ -281,6 +388,8 @@ The base `rhsusf_spc` does not apply `armor = 28` to the complete torso. It decl
 
 - RHS USAF 0.5.6 `rhsusf_c_troops.pbo`, `rhsusf_vests.hpp`
 - RHS USAF 0.5.6 `rhsusf_c_weapons.pbo`, `cfgAmmo.h`
+- RHS AFRF 0.5.6 `rhs_c_weapons.pbo`, `cfgAmmo.h`
+- RHS AFRF 0.5.6 `rhs_c_heavyweapons.pbo`, `rhs_ammo_bullets.hpp`
 - Arma 3 `characters_f.pbo`, `CAManBase`
 - `docs/ACE3/addons/medical_damage/functions/fnc_getAmmoData.sqf`
 - `docs/ACE3/addons/medical_damage/functions/fnc_woundsHandlerArmorPenetration.sqf`
