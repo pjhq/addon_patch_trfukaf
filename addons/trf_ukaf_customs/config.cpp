@@ -28,5 +28,7 @@ class CfgWeapons {
 };
 
 class CfgVehicles {
+	class B_Soldier_base_F;
+
 	PJHQ_HIDE_PLACEABLE(TRF_SNOW_COVERALLS_TEX);
 };

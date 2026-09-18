@@ -13,6 +13,8 @@ class CfgPatches {
 };
 
 class CfgVehicles {
+	class B_Soldier_base_F;
+
 	PJHQ_HIDE_PLACEABLE(TRF_CS95_1RIF_FS_NG_U_TEX);
 	PJHQ_HIDE_PLACEABLE(TRF_CS95_1RIF_FS_G_U_TEX);
 	PJHQ_HIDE_PLACEABLE(TRF_CS95_1RIF_HS_NG_U_TEX);

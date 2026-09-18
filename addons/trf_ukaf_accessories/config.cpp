@@ -13,5 +13,7 @@ class CfgPatches {
 };
 
 class CfgVehicles {
+	class B_Soldier_base_F;
+
 	PJHQ_HIDE_PLACEABLE(TRF_CS95_FORDY_HS_G_U_TEX);
 };

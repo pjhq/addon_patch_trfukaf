@@ -31,6 +31,8 @@ class CfgWeapons {
 };
 
 class CfgVehicles {
+	class B_Soldier_base_F;
+
 	PJHQ_HIDE_PLACEABLE(TRF_CRYE_G4_B_NG_FS_TEX);
 	PJHQ_HIDE_PLACEABLE(TRF_CRYE_G4_BLNK_NG_FS_TEX);
 	PJHQ_HIDE_PLACEABLE(TRF_CRYE_G4_RMC_NG_FS_TEX);
