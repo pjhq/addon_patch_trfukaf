@@ -8,8 +8,8 @@ JOIN US TODAY:
 
 [h1]Summary[/h1]
 [list]
-[*]Rebalances 13 helmets and 24 vests.
-[*]Hides 103 unique CfgVehicles classes from Eden/Zeus placement using 121 component declarations; 18 PCS uniform classes are declared in both insignia component patches.
+[*]Rebalances 13 helmets and 34 vests.
+[*]Hides 104 unique CfgVehicles classes from Eden/Zeus placement using 122 component declarations; 18 PCS uniform classes are declared in both insignia component patches.
 [*]Leaves scopeArsenal unchanged, so source gear remains available in the Arsenal.
 [*]Changes config values only; no models, textures, sounds, scripts or event handlers are replaced.
 [/list]
@@ -48,7 +48,7 @@ The source vests did not declare a Neck block. This patch adds one; inherited pr
 [h2]Eden And Zeus Visibility[/h2]
 [code]
 All target classes.scope: 2 -> 1
-103 target classes.scopeCurator: 2 -> 0
+104 target classes.scopeCurator: 2 -> 0
 [/code]
 
 [h1]Complete Patch List[/h1]
@@ -233,7 +233,7 @@ UKAF_C2R_CBAV_RIFLEMAN
 UKAF_C2R_CBAV_RIFLEMAN_2
 [/code]
 
-[b]Hidden from Eden/Zeus placement (12)[/b]
+[b]Hidden from Eden/Zeus placement (13)[/b]
 [code]
 TRF_CRYE_G4_B_NG_FS_TEX
 TRF_CRYE_G4_BLNK_NG_FS_TEX
@@ -247,6 +247,22 @@ TRF_CRYE_G4_RMC_G_RS_TEX
 TRF_CRYE_G4_RNC_PCU_TEX
 TRF_CRYE_G4_BLNK_PCU_TEX
 TRF_CRYE_G4_RMC_PCU_TEX
+TRF_DRYSUIT_TEX
+[/code]
+
+[h2]TRF UKAF Shooter[/h2]
+[b]Vest armor (10)[/b]
+[code]
+TRF_VIRTUS_SHOOTER_RIFLEMAN
+TRF_VIRTUS_SHOOTER_RIFLEMAN_2
+TRF_VIRTUS_SHOOTER_RIFLEMAN_3
+TRF_VIRTUS_SHOOTER_IC
+TRF_VIRTUS_SHOOTER_IC_2
+TRF_VIRTUS_SHOOTER_IC_3
+TRF_VIRTUS_SHOOTER_MEDIC
+TRF_VIRTUS_SHOOTER_GRENADIER
+TRF_VIRTUS_SHOOTER_GUNNER
+TRF_VIRTUS_SHOOTER_SHARPSHOOTER
 [/code]
 
 [h2]TRF UKAF Smock Insignia[/h2]

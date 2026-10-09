@@ -8,7 +8,7 @@ include = ["mod.cpp", "meta.cpp", "logo_pjhq_ca.paa", "LICENSE", "keys/*.bikey",
 
 [version]
 major = 0
-minor = 1
+minor = 2
 patch = 0
 git_hash = 0
 

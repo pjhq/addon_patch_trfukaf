@@ -148,14 +148,24 @@ export async function saveHistory(root: string, history: ClassHistory): Promise<
 }
 
 export function renderChangelog(history: ClassHistory | undefined): string {
-  const lines = ["# Changelog", ""];
+  const lines: string[] = [];
   if (!history) return lines.join("\n");
-  const classLines = (items: InventoryClass[]): string[] => items.map((item) => `- \`${item.className}\` — ${item.addons.map((addon) => `\`${addon}.pbo\``).join(", ")}`);
   const current = history.versions.at(-1);
   if (!current) return lines.join("\n");
   const previous = history.versions.at(-2);
   const oldKeys = new Set(previous?.inventory.map(key));
   const added = previous ? current.inventory.filter((item) => !oldKeys.has(key(item))) : [];
-  lines.push(`## ${current.version}`, "", ...classLines(added), "");
+  lines.push(`## ${current.version}`, "");
+  const groups = new Map<string, Set<string>>();
+  for (const item of added) {
+    for (const addon of item.addons) {
+      const classes = groups.get(addon) ?? new Set<string>();
+      classes.add(item.className);
+      groups.set(addon, classes);
+    }
+  }
+  for (const addon of [...groups.keys()].sort()) {
+    lines.push(`### ${addon}.pbo`, "", ...[...groups.get(addon)!].sort().map((className) => `- \`${className}\``), "");
+  }
   return lines.join("\n");
 }

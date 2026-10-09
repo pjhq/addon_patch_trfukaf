@@ -5,8 +5,8 @@ A config-only compatibility and balance patch for TRF UKAF. It normalizes helmet
 
 ## What It Changes
 
-- Rebalances **13 helmets** and **24 vests** across 4 component patches.
-- Hides **103 unique `CfgVehicles` classes** from Eden/Zeus placement using 121 component declarations. 18 PCS uniform classes are declared in both insignia component patches.
+- Rebalances **13 helmets** and **34 vests** across 5 component patches.
+- Hides **104 unique `CfgVehicles` classes** from Eden/Zeus placement using 122 component declarations. 18 PCS uniform classes are declared in both insignia component patches.
 - Changes config values only. This project contains no replacement models, textures, sounds, scripts or event handlers.
 - Does not change `scopeArsenal`, so wearable gear remains available in the Arsenal where the source addon exposes it.
 - See [Damage And Armor Reference](DAMAGE_INFO.md) for how ammunition and personal armor values interact under vanilla and ACE Medical damage handling.
@@ -57,7 +57,7 @@ The source vest classes did not declare a `Neck` block. The patch adds one, but 
 | Area | Property | From | To | Baseline status |
 | --- | --- | --- | --- | --- |
 | All target classes | `scope` | `2` | `1` | Verified |
-| 103 target classes | `scopeCurator` | `2` | `0` | Verified |
+| 104 target classes | `scopeCurator` | `2` | `0` | Verified |
 
 ## Complete Addon Breakdown
 
@@ -309,7 +309,7 @@ UKAF_C2R_CBAV_RIFLEMAN
 UKAF_C2R_CBAV_RIFLEMAN_2
 ```
 
-**Hidden from Eden/Zeus placement (12)**
+**Hidden from Eden/Zeus placement (13)**
 
 ```text
 TRF_CRYE_G4_B_NG_FS_TEX
@@ -324,6 +324,27 @@ TRF_CRYE_G4_RMC_G_RS_TEX
 TRF_CRYE_G4_RNC_PCU_TEX
 TRF_CRYE_G4_BLNK_PCU_TEX
 TRF_CRYE_G4_RMC_PCU_TEX
+TRF_DRYSUIT_TEX
+```
+
+### PJHQ Patches - TRF UKAF Shooter (`trf_ukaf_shooter`)
+
+- Config patch: `PJHQ_Patch_TRFUKAF_SHOOTER`
+- Required addons: `PJHQ_Patch_TRFUKAF_Main`, `TRF_UKAF_SHOOTER`
+
+**Vest armor (10)**
+
+```text
+TRF_VIRTUS_SHOOTER_RIFLEMAN
+TRF_VIRTUS_SHOOTER_RIFLEMAN_2
+TRF_VIRTUS_SHOOTER_RIFLEMAN_3
+TRF_VIRTUS_SHOOTER_IC
+TRF_VIRTUS_SHOOTER_IC_2
+TRF_VIRTUS_SHOOTER_IC_3
+TRF_VIRTUS_SHOOTER_MEDIC
+TRF_VIRTUS_SHOOTER_GRENADIER
+TRF_VIRTUS_SHOOTER_GUNNER
+TRF_VIRTUS_SHOOTER_SHARPSHOOTER
 ```
 
 ### PJHQ Patches - TRF UKAF Smock Insignia (`trf_ukaf_smock_insignia`)

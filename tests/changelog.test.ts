@@ -19,13 +19,13 @@ describe("versioned patch changelog", () => {
   test("first version establishes a baseline without listing every class", () => {
     const history = refreshHistory(undefined, oldInventory, "0.1.0");
     expect(history.versions).toHaveLength(1);
-    expect(renderChangelog(history).trim()).toBe("# Changelog\n\n## 0.1.0");
+    expect(renderChangelog(history).trim()).toBe("## 0.1.0");
   });
 
   test("renders only additions from the previous version, not old classes or removals", () => {
     const baseline = refreshHistory(undefined, oldInventory, "0.1.0");
     const next = refreshHistory(baseline, inventory("class CfgWeapons { class New {}; };"), "0.1.1");
-    expect(renderChangelog(next).trim()).toBe("# Changelog\n\n## 0.1.1\n\n- `New` — `TRF.pbo`");
+    expect(renderChangelog(next).trim()).toBe("## 0.1.1\n\n### TRF.pbo\n\n- `New`");
     expect(next.versions[0]?.inventory).toEqual(oldInventory);
   });
 
@@ -44,7 +44,19 @@ describe("versioned patch changelog", () => {
     const baseline = refreshHistory(undefined, oldInventory, "0.1.0");
     const next = refreshHistory(baseline, newInventory, "0.1.1");
     const latest = refreshHistory(next, inventory("class CfgWeapons { class Old {}; class New {}; class Latest {}; };"), "0.1.2");
-    expect(renderChangelog(latest).trim()).toBe("# Changelog\n\n## 0.1.2\n\n- `Latest` — `TRF.pbo`");
+    expect(renderChangelog(latest).trim()).toBe("## 0.1.2\n\n### TRF.pbo\n\n- `Latest`");
+  });
+
+  test("groups and sorts additions under each source PBO", () => {
+    const baseline = refreshHistory(undefined, oldInventory, "0.1.0");
+    const source = inventoryFromConfigs([
+      { addon: "Z", content: "class CfgWeapons { class Zebra {}; class Shared {}; };" },
+      { addon: "A", content: "class CfgWeapons { class Shared {}; class Alpha {}; };" }
+    ]);
+    const next = refreshHistory(baseline, source, "0.1.1");
+    expect(renderChangelog(next).trim()).toBe(
+      "## 0.1.1\n\n### A.pbo\n\n- `Alpha`\n- `Shared`\n\n### Z.pbo\n\n- `Shared`\n- `Zebra`"
+    );
   });
 
   test("addon moves and property changes are not additions", () => {

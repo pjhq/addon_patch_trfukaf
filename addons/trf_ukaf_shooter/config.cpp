@@ -1,0 +1,29 @@
+#include "\pjhq\patch_trfukaf\addons\main\armor_macros.hpp"
+
+class CfgPatches {
+	class PJHQ_Patch_TRFUKAF_SHOOTER {
+		name = "PJHQ Patches - TRF UKAF Shooter";
+		author = "N. Home";
+		requiredVersion = 2.18;
+		requiredAddons[] = {"PJHQ_Patch_TRFUKAF_Main", "TRF_UKAF_SHOOTER"};
+		skipWhenMissingDependencies = 1;
+		units[] = {};
+		weapons[] = {};
+	};
+};
+
+class CfgWeapons {
+	class ItemCore;
+	class VestItem;
+
+	PJHQ_PATCH_VEST_ARMOR(TRF_VIRTUS_SHOOTER_RIFLEMAN);
+	PJHQ_PATCH_VEST_ARMOR(TRF_VIRTUS_SHOOTER_RIFLEMAN_2);
+	PJHQ_PATCH_VEST_ARMOR(TRF_VIRTUS_SHOOTER_RIFLEMAN_3);
+	PJHQ_PATCH_VEST_ARMOR(TRF_VIRTUS_SHOOTER_IC);
+	PJHQ_PATCH_VEST_ARMOR(TRF_VIRTUS_SHOOTER_IC_2);
+	PJHQ_PATCH_VEST_ARMOR(TRF_VIRTUS_SHOOTER_IC_3);
+	PJHQ_PATCH_VEST_ARMOR(TRF_VIRTUS_SHOOTER_MEDIC);
+	PJHQ_PATCH_VEST_ARMOR(TRF_VIRTUS_SHOOTER_GRENADIER);
+	PJHQ_PATCH_VEST_ARMOR(TRF_VIRTUS_SHOOTER_GUNNER);
+	PJHQ_PATCH_VEST_ARMOR(TRF_VIRTUS_SHOOTER_SHARPSHOOTER);
+};
