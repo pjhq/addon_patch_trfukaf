@@ -8,18 +8,18 @@ JOIN US TODAY:
 
 [h1]Summary[/h1]
 [list]
-[_]Rebalances 13 helmets and 24 vests.
-[_]Hides 103 unique CfgVehicles classes from Eden/Zeus placement using 121 component declarations; 18 PCS uniform classes are declared in both insignia component patches.
-[_]Leaves scopeArsenal unchanged, so source gear remains available in the Arsenal.
-[_]Changes config values only; no models, textures, sounds, scripts or event handlers are replaced.
+[*]Rebalances 13 helmets and 24 vests.
+[*]Hides 103 unique CfgVehicles classes from Eden/Zeus placement using 121 component declarations; 18 PCS uniform classes are declared in both insignia component patches.
+[*]Leaves scopeArsenal unchanged, so source gear remains available in the Arsenal.
+[*]Changes config values only; no models, textures, sounds, scripts or event handlers are replaced.
 [/list]
 
 [h1]Requirements And Loading[/h1]
 [list]
-[_]Arma 3 version 2.18 or newer.
-[_]TRF UKAF and whichever TRF UKAF optional components you use.
-[_]Load this patch after TRF UKAF.
-[_]Patch components whose declared source dependency is missing are skipped.
+[*]Arma 3 version 2.18 or newer.
+[*]TRF UKAF and whichever TRF UKAF optional components you use.
+[*]Load this patch after TRF UKAF.
+[*]Patch components whose declared source dependency is missing are skipped.
 [/list]
 
 [h1]Exact Value Changes[/h1]
@@ -271,6 +271,7 @@ TRF_STV_FORDY
 TRF_STV_SPINK
 TRF_STV_WEBBING_P
 [/code]
+
 
 [h1]Source And Support[/h1]
 [url=https://github.com/pjhq/addon_patch_trfukaf]Source code and full README[/url]

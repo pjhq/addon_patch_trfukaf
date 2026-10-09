@@ -2,6 +2,7 @@ import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 import { compareConfigs, UNKNOWN_VALUE, type ConfigComparison } from "./lib/config-comparison.ts";
+import { prepareHistory, renderChangelog, saveHistory } from "./lib/changelog.ts";
 
 interface AddonPatch {
   directory: string;
@@ -182,7 +183,9 @@ function renderReadme(addons: AddonPatch[], changes: ConfigComparison): string {
     "bun run docs:check",
     "```",
     "",
-    "`bun run docs` regenerates this file and `WORKSHOP.md` from converted patch configs, creating the ignored baseline cache under `source_addons/` when needed. `bun run docs:refresh` first rebuilds the baseline from the extracted configs. `bun run docs:check` exits with an error when either generated file is stale.",
+    "`bun run docs` regenerates this file, `WORKSHOP.md`, and `CHANGELOG.md`, creating the ignored armor baseline cache under `source_addons/` when needed. `bun run docs:refresh` rebuilds the armor baseline from the extracted configs and updates classname history. `bun run docs:check` exits with an error when any generated file is stale.",
+    "",
+    "[Changelog](CHANGELOG.md) lists only classes added between the previous and current patch version, with source PBOs. Set the version in `.hemtt/project.toml` before `docs:refresh`; version inventories are retained in `docs/history/patch.json`. Repeated refreshes update the current version without changing the previous version. The first version establishes a baseline. `docs` renders saved history and `docs:check` checks it without updating history.",
     "",
     "## Source And Issues",
     "",
@@ -303,10 +306,17 @@ async function updateFile(fileName: string, content: string, checkOnly: boolean)
 async function main(): Promise<void> {
   const checkOnly = process.argv.includes("--check");
   const refreshBaselines = process.argv.includes("--refresh-baselines");
+  if (checkOnly && refreshBaselines) throw new Error("--check cannot be combined with --refresh-baselines");
   const addons = await readAddons();
+  const history = await prepareHistory(root, refreshBaselines, addons);
   const changes = await compareConfigs(root, addons, refreshBaselines);
 
-  const results = await Promise.all([updateFile("README.md", renderReadme(addons, changes), checkOnly), updateFile("WORKSHOP.md", renderWorkshop(addons, changes), checkOnly)]);
+  const results = await Promise.all([
+    updateFile("README.md", renderReadme(addons, changes), checkOnly),
+    updateFile("WORKSHOP.md", renderWorkshop(addons, changes), checkOnly),
+    updateFile("CHANGELOG.md", renderChangelog(history), checkOnly)
+  ]);
+  if (refreshBaselines && history && results.every(Boolean)) await saveHistory(root, history);
   if (results.some((result) => !result)) {
     process.exitCode = 1;
   }

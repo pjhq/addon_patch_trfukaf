@@ -8,5 +8,5 @@
   "singleQuote": false,
   "trailingComma": "none",
   "endOfLine": "lf",
-  "ignorePatterns": ["node_modules", "source_addons", "docs"]
+  "ignorePatterns": ["node_modules", "source_addons", "docs", "WORKSHOP.md", "CHANGELOG.md"]
 }

@@ -42,6 +42,7 @@ hemtt
 hemtt.exe
 *.biprivatekey
 .hemttprivatekey
-docs
+docs/*
+!docs/history/
 source_addons
 reports

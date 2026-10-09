@@ -1,0 +1,990 @@
+{
+  "schemaVersion": 2,
+  "versions": [
+    {
+      "version": "0.2.0",
+      "inventory": [
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CRYE_G4_B_G_RS_TEX",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CRYE_G4_B_NG_FS_TEX",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CRYE_G4_B_NG_RS_TEX",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CRYE_G4_BLNK_G_RS_TEX",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CRYE_G4_BLNK_NG_FS_TEX",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CRYE_G4_BLNK_NG_RS_TEX",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CRYE_G4_BLNK_PCU_TEX",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CRYE_G4_RMC_G_RS_TEX",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CRYE_G4_RMC_NG_FS_TEX",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CRYE_G4_RMC_NG_RS_TEX",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CRYE_G4_RMC_PCU_TEX",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CRYE_G4_RNC_PCU_TEX",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_1RIF_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_1RIF_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_1RIF_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_1RIF_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_1RIF_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_1RIF_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_1RY_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_1RY_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_1RY_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_1RY_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_1RY_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_1RY_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_2PARA_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_2PARA_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_2PARA_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_2PARA_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_2PARA_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_2PARA_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_3SCOTS_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_3SCOTS_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_3SCOTS_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_3SCOTS_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_3SCOTS_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_3SCOTS_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_FORDY_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_ACCESSORIES"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_FS_G_T",
+          "addons": [
+            "TRF_UKAF_CS95"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_FS_NG_T",
+          "addons": [
+            "TRF_UKAF_CS95"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_HS_G_T",
+          "addons": [
+            "TRF_UKAF_CS95"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_HS_NG_T",
+          "addons": [
+            "TRF_UKAF_CS95"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_MERCIAN_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_MERCIAN_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_MERCIAN_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_MERCIAN_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_MERCIAN_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_MERCIAN_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_CS95_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RS_G_T",
+          "addons": [
+            "TRF_UKAF_CS95"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RS_NG_T",
+          "addons": [
+            "TRF_UKAF_CS95"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_FLIGHTSUIT_18SQN_TEX",
+          "addons": [
+            "TRF_PILOT"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_FLIGHTSUIT_617SQN_TEX",
+          "addons": [
+            "TRF_PILOT"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_FLIGHTSUIT_656SQN_TEX",
+          "addons": [
+            "TRF_PILOT"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_FLIGHTSUIT_814SQN_TEX",
+          "addons": [
+            "TRF_PILOT"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_FLIGHTSUIT_BLANK_TEX",
+          "addons": [
+            "TRF_PILOT"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_1RIF_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_1RIF_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_1RIF_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_1RIF_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_1RIF_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_1RIF_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_1RY_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_1RY_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_1RY_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_1RY_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_1RY_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_1RY_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_2PARA_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_2PARA_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_2PARA_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_2PARA_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_2PARA_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_2PARA_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_3SCOTS_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_3SCOTS_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_3SCOTS_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_3SCOTS_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_3SCOTS_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_3SCOTS_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_MERCIAN_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_MERCIAN_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_MERCIAN_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_MERCIAN_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_MERCIAN_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_MERCIAN_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_PCS_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_1RIF_G_T",
+          "addons": [
+            "TRF_UKAF_SMOCK_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_1RIF_NG_T",
+          "addons": [
+            "TRF_UKAF_SMOCK_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_1RY_G_T",
+          "addons": [
+            "TRF_UKAF_SMOCK_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_1RY_NG_T",
+          "addons": [
+            "TRF_UKAF_SMOCK_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_2PARA_G_T",
+          "addons": [
+            "TRF_UKAF_SMOCK_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_2PARA_NG_T",
+          "addons": [
+            "TRF_UKAF_SMOCK_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_3SCOTS_G_T",
+          "addons": [
+            "TRF_UKAF_SMOCK_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_3SCOTS_NG_T",
+          "addons": [
+            "TRF_UKAF_SMOCK_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_G_T",
+          "addons": [
+            "TRF_UKAF_CS95"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_MERCIAN_G_T",
+          "addons": [
+            "TRF_UKAF_SMOCK_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_MERCIAN_NG_T",
+          "addons": [
+            "TRF_UKAF_SMOCK_INSIGNIA"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_NG_T",
+          "addons": [
+            "TRF_UKAF_CS95"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SNOW_COVERALLS_TEX",
+          "addons": [
+            "TRF_UKAF_CUSTOMS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_BATLSKIN_REVISION",
+          "addons": [
+            "TRF_UKAF"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_BATLSKIN_REVISION_CREW",
+          "addons": [
+            "TRF_UKAF"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_BATLSKIN_REVISION_CREW_MANDIBLE",
+          "addons": [
+            "TRF_UKAF_CUSTOMS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_BATLSKIN_REVISION_CREW_MANDIBLE_SCRIM",
+          "addons": [
+            "TRF_UKAF_CUSTOMS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_BATLSKIN_REVISION_CREW_SCRIM",
+          "addons": [
+            "TRF_UKAF"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_BATLSKIN_REVISION_IR",
+          "addons": [
+            "TRF_UKAF"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_BATLSKIN_REVISION_NETTING",
+          "addons": [
+            "TRF_UKAF"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_BATLSKIN_REVISION_NETTING_IR",
+          "addons": [
+            "TRF_UKAF"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_BATLSKIN_REVISION_PRSN",
+          "addons": [
+            "TRF_UKAF_CUSTOMS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_BATLSKIN_REVISION_SCRIM_OAK",
+          "addons": [
+            "TRF_UKAF"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_BATLSKIN_REVISION_STRIP_SCRIM",
+          "addons": [
+            "TRF_UKAF_CUSTOMS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_BATLSKIN_REVISION_UN",
+          "addons": [
+            "TRF_UKAF"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_FAST_SFHC",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_Crew",
+          "addons": [
+            "TRF_UKAF"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_FORDY",
+          "addons": [
+            "TRF_UKAF_WEBBING"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_Grenadier",
+          "addons": [
+            "TRF_UKAF"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_Gunner",
+          "addons": [
+            "TRF_UKAF"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_IC",
+          "addons": [
+            "TRF_UKAF"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_IC_2",
+          "addons": [
+            "TRF_UKAF"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_IC_3",
+          "addons": [
+            "TRF_UKAF"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_Medic",
+          "addons": [
+            "TRF_UKAF"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_Pilot",
+          "addons": [
+            "TRF_UKAF_CUSTOMS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_Rifleman",
+          "addons": [
+            "TRF_UKAF"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_Rifleman_2",
+          "addons": [
+            "TRF_UKAF"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_Rifleman_3",
+          "addons": [
+            "TRF_UKAF"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_Sharpshooter",
+          "addons": [
+            "TRF_UKAF"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_SIGNALLER",
+          "addons": [
+            "TRF_UKAF_CUSTOMS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_SPINK",
+          "addons": [
+            "TRF_UKAF_WEBBING"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_WEBBING_P",
+          "addons": [
+            "TRF_UKAF_WEBBING"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "UKAF_C2R_CBAV_JTAC",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "UKAF_C2R_CBAV_JTAC_2",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "UKAF_C2R_CBAV_MARKSMAN",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "UKAF_C2R_CBAV_MEDIC",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "UKAF_C2R_CBAV_RIFLEMAN",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "UKAF_C2R_CBAV_RIFLEMAN_2",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "UKAF_C2R_CBAV_SL",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "UKAF_C2R_CBAV_SL_2",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        }
+      ]
+    }
+  ]
+}
