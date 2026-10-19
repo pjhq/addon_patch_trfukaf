@@ -5,8 +5,8 @@ A config-only compatibility and balance patch for TRF UKAF. It normalizes helmet
 
 ## What It Changes
 
-- Rebalances **13 helmets** and **34 vests** across 5 component patches.
-- Hides **104 unique `CfgVehicles` classes** from Eden/Zeus placement using 122 component declarations. 18 PCS uniform classes are declared in both insignia component patches.
+- Rebalances **13 helmets** and **36 vests** across 5 component patches.
+- Hides **146 unique `CfgVehicles` classes** from Eden/Zeus placement using 164 component declarations. 18 PCS uniform classes are declared in both insignia component patches.
 - Changes config values only. This project contains no replacement models, textures, sounds, scripts or event handlers.
 - Does not change `scopeArsenal`, so wearable gear remains available in the Arsenal where the source addon exposes it.
 - See [Damage And Armor Reference](DAMAGE_INFO.md) for how ammunition and personal armor values interact under vanilla and ACE Medical damage handling.
@@ -57,7 +57,7 @@ The source vest classes did not declare a `Neck` block. The patch adds one, but 
 | Area | Property | From | To | Baseline status |
 | --- | --- | --- | --- | --- |
 | All target classes | `scope` | `2` | `1` | Verified |
-| 104 target classes | `scopeCurator` | `2` | `0` | Verified |
+| 146 target classes | `scopeCurator` | `2` | `0` | Verified |
 
 ## Complete Addon Breakdown
 
@@ -155,7 +155,7 @@ TRF_CS95_RS_G_T
 - Config patch: `PJHQ_Patch_TRFUKAF_CS95_INSIGNIA`
 - Required addons: `PJHQ_Patch_TRFUKAF_Main`, `TRF_UKAF`
 
-**Hidden from Eden/Zeus placement (30)**
+**Hidden from Eden/Zeus placement (36)**
 
 ```text
 TRF_CS95_1RIF_FS_NG_U_TEX
@@ -188,6 +188,12 @@ TRF_CS95_1RY_HS_NG_U_TEX
 TRF_CS95_1RY_HS_G_U_TEX
 TRF_CS95_1RY_RS_NG_U_TEX
 TRF_CS95_1RY_RS_G_U_TEX
+TRF_CS95_RAFREG_FS_NG_U_TEX
+TRF_CS95_RAFREG_FS_G_U_TEX
+TRF_CS95_RAFREG_HS_NG_U_TEX
+TRF_CS95_RAFREG_HS_G_U_TEX
+TRF_CS95_RAFREG_RS_NG_U_TEX
+TRF_CS95_RAFREG_RS_G_U_TEX
 ```
 
 ### PJHQ Patches - TRF UKAF Customs (`trf_ukaf_customs`)
@@ -250,7 +256,7 @@ TRF_PCS_3SCOTS_RS_G_U_TEX
 - Config patch: `PJHQ_Patch_TRFUKAF_PCS_INSIGNIA`
 - Required addons: `PJHQ_Patch_TRFUKAF_Main`, `TRF_UKAF`
 
-**Hidden from Eden/Zeus placement (30)**
+**Hidden from Eden/Zeus placement (36)**
 
 ```text
 TRF_PCS_1RIF_FS_NG_U_TEX
@@ -283,6 +289,12 @@ TRF_PCS_1RY_HS_NG_U_TEX
 TRF_PCS_1RY_HS_G_U_TEX
 TRF_PCS_1RY_RS_NG_U_TEX
 TRF_PCS_1RY_RS_G_U_TEX
+TRF_PCS_RAFREG_FS_NG_U_TEX
+TRF_PCS_RAFREG_FS_G_U_TEX
+TRF_PCS_RAFREG_HS_NG_U_TEX
+TRF_PCS_RAFREG_HS_G_U_TEX
+TRF_PCS_RAFREG_RS_NG_U_TEX
+TRF_PCS_RAFREG_RS_G_U_TEX
 ```
 
 ### PJHQ Patches - TRF UKAF SFSG (`trf_ukaf_sfsg`)
@@ -352,7 +364,7 @@ TRF_VIRTUS_SHOOTER_SHARPSHOOTER
 - Config patch: `PJHQ_Patch_TRFUKAF_SMOCK_INSIGNIA`
 - Required addons: `PJHQ_Patch_TRFUKAF_Main`, `TRF_UKAF`
 
-**Hidden from Eden/Zeus placement (10)**
+**Hidden from Eden/Zeus placement (12)**
 
 ```text
 TRF_SMOCK_1RIF_G_T
@@ -365,6 +377,46 @@ TRF_SMOCK_MERCIAN_G_T
 TRF_SMOCK_MERCIAN_NG_T
 TRF_SMOCK_1RY_G_T
 TRF_SMOCK_1RY_NG_T
+TRF_SMOCK_RAFREG_G_T
+TRF_SMOCK_RAFREG_NG_T
+```
+
+### PJHQ Patches - TRF UKAF UBACS (`trf_ukaf_ubacs`)
+
+- Config patch: `PJHQ_Patch_TRFUKAF_UBACS`
+- Required addons: `PJHQ_Patch_TRFUKAF_Main`, `TRF_UKAF_UBACS`
+
+**Hidden from Eden/Zeus placement (28)**
+
+```text
+TRF_UBACS_FS_G_T
+TRF_UBACS_FS_NG_T
+TRF_UBACS_HS_G_T
+TRF_UBACS_HS_NG_T
+TRF_UBACS_1RIF_FS_G_T
+TRF_UBACS_1RIF_FS_NG_T
+TRF_UBACS_1RIF_HS_G_T
+TRF_UBACS_1RIF_HS_NG_T
+TRF_UBACS_2PARA_FS_G_T
+TRF_UBACS_2PARA_FS_NG_T
+TRF_UBACS_2PARA_HS_G_T
+TRF_UBACS_2PARA_HS_NG_T
+TRF_UBACS_3SCOTS_FS_G_T
+TRF_UBACS_3SCOTS_FS_NG_T
+TRF_UBACS_3SCOTS_HS_G_T
+TRF_UBACS_3SCOTS_HS_NG_T
+TRF_UBACS_MERCIAN_FS_G_T
+TRF_UBACS_MERCIAN_FS_NG_T
+TRF_UBACS_MERCIAN_HS_G_T
+TRF_UBACS_MERCIAN_HS_NG_T
+TRF_UBACS_1RY_FS_G_T
+TRF_UBACS_1RY_FS_NG_T
+TRF_UBACS_1RY_HS_G_T
+TRF_UBACS_1RY_HS_NG_T
+TRF_UBACS_RAFREG_FS_G_T
+TRF_UBACS_RAFREG_FS_NG_T
+TRF_UBACS_RAFREG_HS_G_T
+TRF_UBACS_RAFREG_HS_NG_T
 ```
 
 ### PJHQ Patches - TRF UKAF Webbing (`trf_ukaf_webbing`)
@@ -372,10 +424,12 @@ TRF_SMOCK_1RY_NG_T
 - Config patch: `PJHQ_Patch_TRFUKAF_WEBBING`
 - Required addons: `PJHQ_Patch_TRFUKAF_Main`, `TRF_UKAF_WEBBING`
 
-**Vest armor (3)**
+**Vest armor (5)**
 
 ```text
 TRF_STV_FORDY
+TRF_STV_GUITAR
+TRF_STV_GUITAR2
 TRF_STV_SPINK
 TRF_STV_WEBBING_P
 ```

@@ -8,8 +8,8 @@ JOIN US TODAY:
 
 [h1]Summary[/h1]
 [list]
-[*]Rebalances 13 helmets and 34 vests.
-[*]Hides 104 unique CfgVehicles classes from Eden/Zeus placement using 122 component declarations; 18 PCS uniform classes are declared in both insignia component patches.
+[*]Rebalances 13 helmets and 36 vests.
+[*]Hides 146 unique CfgVehicles classes from Eden/Zeus placement using 164 component declarations; 18 PCS uniform classes are declared in both insignia component patches.
 [*]Leaves scopeArsenal unchanged, so source gear remains available in the Arsenal.
 [*]Changes config values only; no models, textures, sounds, scripts or event handlers are replaced.
 [/list]
@@ -48,7 +48,7 @@ The source vests did not declare a Neck block. This patch adds one; inherited pr
 [h2]Eden And Zeus Visibility[/h2]
 [code]
 All target classes.scope: 2 -> 1
-104 target classes.scopeCurator: 2 -> 0
+146 target classes.scopeCurator: 2 -> 0
 [/code]
 
 [h1]Complete Patch List[/h1]
@@ -120,7 +120,7 @@ TRF_CS95_RS_G_T
 [/code]
 
 [h2]TRF UKAF CS95 Insignia[/h2]
-[b]Hidden from Eden/Zeus placement (30)[/b]
+[b]Hidden from Eden/Zeus placement (36)[/b]
 [code]
 TRF_CS95_1RIF_FS_NG_U_TEX
 TRF_CS95_1RIF_FS_G_U_TEX
@@ -152,6 +152,12 @@ TRF_CS95_1RY_HS_NG_U_TEX
 TRF_CS95_1RY_HS_G_U_TEX
 TRF_CS95_1RY_RS_NG_U_TEX
 TRF_CS95_1RY_RS_G_U_TEX
+TRF_CS95_RAFREG_FS_NG_U_TEX
+TRF_CS95_RAFREG_FS_G_U_TEX
+TRF_CS95_RAFREG_HS_NG_U_TEX
+TRF_CS95_RAFREG_HS_G_U_TEX
+TRF_CS95_RAFREG_RS_NG_U_TEX
+TRF_CS95_RAFREG_RS_G_U_TEX
 [/code]
 
 [h2]TRF UKAF Customs[/h2]
@@ -199,7 +205,7 @@ TRF_PCS_3SCOTS_RS_G_U_TEX
 
 [h2]TRF UKAF PCS Insignia[/h2]
 Also patches all 18 PCS classes listed under UKAF Insignia, plus:
-[b]Additional hidden classes (12)[/b]
+[b]Additional hidden classes (18)[/b]
 [code]
 TRF_PCS_MERCIAN_FS_NG_U_TEX
 TRF_PCS_MERCIAN_FS_G_U_TEX
@@ -213,6 +219,12 @@ TRF_PCS_1RY_HS_NG_U_TEX
 TRF_PCS_1RY_HS_G_U_TEX
 TRF_PCS_1RY_RS_NG_U_TEX
 TRF_PCS_1RY_RS_G_U_TEX
+TRF_PCS_RAFREG_FS_NG_U_TEX
+TRF_PCS_RAFREG_FS_G_U_TEX
+TRF_PCS_RAFREG_HS_NG_U_TEX
+TRF_PCS_RAFREG_HS_G_U_TEX
+TRF_PCS_RAFREG_RS_NG_U_TEX
+TRF_PCS_RAFREG_RS_G_U_TEX
 [/code]
 
 [h2]TRF UKAF SFSG[/h2]
@@ -266,7 +278,7 @@ TRF_VIRTUS_SHOOTER_SHARPSHOOTER
 [/code]
 
 [h2]TRF UKAF Smock Insignia[/h2]
-[b]Hidden from Eden/Zeus placement (10)[/b]
+[b]Hidden from Eden/Zeus placement (12)[/b]
 [code]
 TRF_SMOCK_1RIF_G_T
 TRF_SMOCK_1RIF_NG_T
@@ -278,12 +290,49 @@ TRF_SMOCK_MERCIAN_G_T
 TRF_SMOCK_MERCIAN_NG_T
 TRF_SMOCK_1RY_G_T
 TRF_SMOCK_1RY_NG_T
+TRF_SMOCK_RAFREG_G_T
+TRF_SMOCK_RAFREG_NG_T
+[/code]
+
+[h2]TRF UKAF UBACS[/h2]
+[b]Hidden from Eden/Zeus placement (28)[/b]
+[code]
+TRF_UBACS_FS_G_T
+TRF_UBACS_FS_NG_T
+TRF_UBACS_HS_G_T
+TRF_UBACS_HS_NG_T
+TRF_UBACS_1RIF_FS_G_T
+TRF_UBACS_1RIF_FS_NG_T
+TRF_UBACS_1RIF_HS_G_T
+TRF_UBACS_1RIF_HS_NG_T
+TRF_UBACS_2PARA_FS_G_T
+TRF_UBACS_2PARA_FS_NG_T
+TRF_UBACS_2PARA_HS_G_T
+TRF_UBACS_2PARA_HS_NG_T
+TRF_UBACS_3SCOTS_FS_G_T
+TRF_UBACS_3SCOTS_FS_NG_T
+TRF_UBACS_3SCOTS_HS_G_T
+TRF_UBACS_3SCOTS_HS_NG_T
+TRF_UBACS_MERCIAN_FS_G_T
+TRF_UBACS_MERCIAN_FS_NG_T
+TRF_UBACS_MERCIAN_HS_G_T
+TRF_UBACS_MERCIAN_HS_NG_T
+TRF_UBACS_1RY_FS_G_T
+TRF_UBACS_1RY_FS_NG_T
+TRF_UBACS_1RY_HS_G_T
+TRF_UBACS_1RY_HS_NG_T
+TRF_UBACS_RAFREG_FS_G_T
+TRF_UBACS_RAFREG_FS_NG_T
+TRF_UBACS_RAFREG_HS_G_T
+TRF_UBACS_RAFREG_HS_NG_T
 [/code]
 
 [h2]TRF UKAF Webbing[/h2]
-[b]Vest armor (3)[/b]
+[b]Vest armor (5)[/b]
 [code]
 TRF_STV_FORDY
+TRF_STV_GUITAR
+TRF_STV_GUITAR2
 TRF_STV_SPINK
 TRF_STV_WEBBING_P
 [/code]
