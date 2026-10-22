@@ -6,7 +6,7 @@ class CfgPatches {
 		name = "PJHQ Patches - TRF UKAF SFSG";
 		author = "N. Home";
 		requiredVersion = 2.18;
-		requiredAddons[] = {"PJHQ_Patch_TRFUKAF_Main", "TRF_UKAF"};
+		requiredAddons[] = {"PJHQ_Patch_TRFUKAF_Main", "TRF_UKAF_SFSG"};
 		skipWhenMissingDependencies = 1;
 		units[] = {};
 		weapons[] = {};

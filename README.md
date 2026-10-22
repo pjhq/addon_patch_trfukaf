@@ -5,8 +5,8 @@ A config-only compatibility and balance patch for TRF UKAF. It normalizes helmet
 
 ## What It Changes
 
-- Rebalances **13 helmets** and **36 vests** across 5 component patches.
-- Hides **146 unique `CfgVehicles` classes** from Eden/Zeus placement using 164 component declarations. 18 PCS uniform classes are declared in both insignia component patches.
+- Rebalances **13 helmets** and **36 vests** across 3 component patches.
+- Hides **218 unique `CfgVehicles` classes** from Eden/Zeus placement using 218 component declarations.
 - Changes config values only. This project contains no replacement models, textures, sounds, scripts or event handlers.
 - Does not change `scopeArsenal`, so wearable gear remains available in the Arsenal where the source addon exposes it.
 - See [Damage And Armor Reference](DAMAGE_INFO.md) for how ammunition and personal armor values interact under vanilla and ACE Medical damage handling.
@@ -57,7 +57,7 @@ The source vest classes did not declare a `Neck` block. The patch adds one, but 
 | Area | Property | From | To | Baseline status |
 | --- | --- | --- | --- | --- |
 | All target classes | `scope` | `2` | `1` | Verified |
-| 146 target classes | `scopeCurator` | `2` | `0` | Verified |
+| 218 target classes | `scopeCurator` | `2` | `0` | Verified |
 
 ## Complete Addon Breakdown
 
@@ -76,51 +76,6 @@ TRF_FLIGHTSUIT_656SQN_TEX
 TRF_FLIGHTSUIT_814SQN_TEX
 ```
 
-### PJHQ Patches - TRF UKAF (`trf_ukaf`)
-
-- Config patch: `PJHQ_Patch_TRFUKAF`
-- Required addons: `PJHQ_Patch_TRFUKAF_Main`, `TRF_UKAF`
-
-**Helmet armor (8)**
-
-```text
-TRF_BATLSKIN_REVISION_UN
-TRF_BATLSKIN_REVISION_CREW
-TRF_BATLSKIN_REVISION_CREW_SCRIM
-TRF_BATLSKIN_REVISION
-TRF_BATLSKIN_REVISION_IR
-TRF_BATLSKIN_REVISION_NETTING
-TRF_BATLSKIN_REVISION_NETTING_IR
-TRF_BATLSKIN_REVISION_SCRIM_OAK
-```
-
-**Vest armor (11)**
-
-```text
-TRF_STV_Grenadier
-TRF_STV_Medic
-TRF_STV_Gunner
-TRF_STV_Sharpshooter
-TRF_STV_Crew
-TRF_STV_Rifleman
-TRF_STV_Rifleman_2
-TRF_STV_Rifleman_3
-TRF_STV_IC
-TRF_STV_IC_2
-TRF_STV_IC_3
-```
-
-**Hidden from Eden/Zeus placement (6)**
-
-```text
-TRF_PCS_FS_NG_U_TEX
-TRF_PCS_FS_G_U_TEX
-TRF_PCS_HS_NG_U_TEX
-TRF_PCS_HS_G_U_TEX
-TRF_PCS_RS_NG_U_TEX
-TRF_PCS_RS_G_U_TEX
-```
-
 ### PJHQ Patches - TRF UKAF Accessories (`trf_ukaf_accessories`)
 
 - Config patch: `PJHQ_Patch_TRFUKAF_ACCESSORIES`
@@ -132,175 +87,32 @@ TRF_PCS_RS_G_U_TEX
 TRF_CS95_FORDY_HS_G_U_TEX
 ```
 
-### PJHQ Patches - TRF UKAF CS95 (`trf_ukaf_cs95`)
+### PJHQ Patches - TRF UKAF Revision (`trf_ukaf_revision`)
 
-- Config patch: `PJHQ_Patch_TRFUKAF_CS95`
-- Required addons: `PJHQ_Patch_TRFUKAF_Main`, `TRF_UKAF`
+- Config patch: `PJHQ_Patch_TRFUKAF_REVISION`
+- Required addons: `PJHQ_Patch_TRFUKAF_Main`, `TRF_UKAF_REVISION`
 
-**Hidden from Eden/Zeus placement (8)**
-
-```text
-TRF_SMOCK_G_T
-TRF_SMOCK_NG_T
-TRF_CS95_FS_NG_T
-TRF_CS95_FS_G_T
-TRF_CS95_HS_NG_T
-TRF_CS95_HS_G_T
-TRF_CS95_RS_NG_T
-TRF_CS95_RS_G_T
-```
-
-### PJHQ Patches - TRF UKAF CS95 Insignia (`trf_ukaf_cs95_insignia`)
-
-- Config patch: `PJHQ_Patch_TRFUKAF_CS95_INSIGNIA`
-- Required addons: `PJHQ_Patch_TRFUKAF_Main`, `TRF_UKAF`
-
-**Hidden from Eden/Zeus placement (36)**
+**Helmet armor (12)**
 
 ```text
-TRF_CS95_1RIF_FS_NG_U_TEX
-TRF_CS95_1RIF_FS_G_U_TEX
-TRF_CS95_1RIF_HS_NG_U_TEX
-TRF_CS95_1RIF_HS_G_U_TEX
-TRF_CS95_1RIF_RS_NG_U_TEX
-TRF_CS95_1RIF_RS_G_U_TEX
-TRF_CS95_2PARA_FS_NG_U_TEX
-TRF_CS95_2PARA_FS_G_U_TEX
-TRF_CS95_2PARA_HS_NG_U_TEX
-TRF_CS95_2PARA_HS_G_U_TEX
-TRF_CS95_2PARA_RS_NG_U_TEX
-TRF_CS95_2PARA_RS_G_U_TEX
-TRF_CS95_3SCOTS_FS_NG_U_TEX
-TRF_CS95_3SCOTS_FS_G_U_TEX
-TRF_CS95_3SCOTS_HS_NG_U_TEX
-TRF_CS95_3SCOTS_HS_G_U_TEX
-TRF_CS95_3SCOTS_RS_NG_U_TEX
-TRF_CS95_3SCOTS_RS_G_U_TEX
-TRF_CS95_MERCIAN_FS_NG_U_TEX
-TRF_CS95_MERCIAN_FS_G_U_TEX
-TRF_CS95_MERCIAN_HS_NG_U_TEX
-TRF_CS95_MERCIAN_HS_G_U_TEX
-TRF_CS95_MERCIAN_RS_NG_U_TEX
-TRF_CS95_MERCIAN_RS_G_U_TEX
-TRF_CS95_1RY_FS_NG_U_TEX
-TRF_CS95_1RY_FS_G_U_TEX
-TRF_CS95_1RY_HS_NG_U_TEX
-TRF_CS95_1RY_HS_G_U_TEX
-TRF_CS95_1RY_RS_NG_U_TEX
-TRF_CS95_1RY_RS_G_U_TEX
-TRF_CS95_RAFREG_FS_NG_U_TEX
-TRF_CS95_RAFREG_FS_G_U_TEX
-TRF_CS95_RAFREG_HS_NG_U_TEX
-TRF_CS95_RAFREG_HS_G_U_TEX
-TRF_CS95_RAFREG_RS_NG_U_TEX
-TRF_CS95_RAFREG_RS_G_U_TEX
-```
-
-### PJHQ Patches - TRF UKAF Customs (`trf_ukaf_customs`)
-
-- Config patch: `PJHQ_Patch_TRFUKAF_CUSTOMS`
-- Required addons: `PJHQ_Patch_TRFUKAF_Main`, `TRF_UKAF_CUSTOM`
-
-**Helmet armor (4)**
-
-```text
-TRF_BATLSKIN_REVISION_PRSN
-TRF_BATLSKIN_REVISION_STRIP_SCRIM
+TRF_BATLSKIN_REVISION
+TRF_BATLSKIN_REVISION_CREW
 TRF_BATLSKIN_REVISION_CREW_MANDIBLE
 TRF_BATLSKIN_REVISION_CREW_MANDIBLE_SCRIM
-```
-
-**Vest armor (2)**
-
-```text
-TRF_STV_Pilot
-TRF_STV_SIGNALLER
-```
-
-**Hidden from Eden/Zeus placement (1)**
-
-```text
-TRF_SNOW_COVERALLS_TEX
-```
-
-### PJHQ Patches - TRF UKAF Insignia (`trf_ukaf_insignia`)
-
-- Config patch: `PJHQ_Patch_TRFUKAF_INSIGNIA`
-- Required addons: `PJHQ_Patch_TRFUKAF_Main`, `TRF_UKAF`
-
-**Hidden from Eden/Zeus placement (18)**
-
-```text
-TRF_PCS_1RIF_FS_NG_U_TEX
-TRF_PCS_1RIF_FS_G_U_TEX
-TRF_PCS_1RIF_HS_NG_U_TEX
-TRF_PCS_1RIF_HS_G_U_TEX
-TRF_PCS_1RIF_RS_NG_U_TEX
-TRF_PCS_1RIF_RS_G_U_TEX
-TRF_PCS_2PARA_FS_NG_U_TEX
-TRF_PCS_2PARA_FS_G_U_TEX
-TRF_PCS_2PARA_HS_NG_U_TEX
-TRF_PCS_2PARA_HS_G_U_TEX
-TRF_PCS_2PARA_RS_NG_U_TEX
-TRF_PCS_2PARA_RS_G_U_TEX
-TRF_PCS_3SCOTS_FS_NG_U_TEX
-TRF_PCS_3SCOTS_FS_G_U_TEX
-TRF_PCS_3SCOTS_HS_NG_U_TEX
-TRF_PCS_3SCOTS_HS_G_U_TEX
-TRF_PCS_3SCOTS_RS_NG_U_TEX
-TRF_PCS_3SCOTS_RS_G_U_TEX
-```
-
-### PJHQ Patches - TRF UKAF PCS Insignia (`trf_ukaf_pcs_insignia`)
-
-- Config patch: `PJHQ_Patch_TRFUKAF_PCS_INSIGNIA`
-- Required addons: `PJHQ_Patch_TRFUKAF_Main`, `TRF_UKAF`
-
-**Hidden from Eden/Zeus placement (36)**
-
-```text
-TRF_PCS_1RIF_FS_NG_U_TEX
-TRF_PCS_1RIF_FS_G_U_TEX
-TRF_PCS_1RIF_HS_NG_U_TEX
-TRF_PCS_1RIF_HS_G_U_TEX
-TRF_PCS_1RIF_RS_NG_U_TEX
-TRF_PCS_1RIF_RS_G_U_TEX
-TRF_PCS_2PARA_FS_NG_U_TEX
-TRF_PCS_2PARA_FS_G_U_TEX
-TRF_PCS_2PARA_HS_NG_U_TEX
-TRF_PCS_2PARA_HS_G_U_TEX
-TRF_PCS_2PARA_RS_NG_U_TEX
-TRF_PCS_2PARA_RS_G_U_TEX
-TRF_PCS_3SCOTS_FS_NG_U_TEX
-TRF_PCS_3SCOTS_FS_G_U_TEX
-TRF_PCS_3SCOTS_HS_NG_U_TEX
-TRF_PCS_3SCOTS_HS_G_U_TEX
-TRF_PCS_3SCOTS_RS_NG_U_TEX
-TRF_PCS_3SCOTS_RS_G_U_TEX
-TRF_PCS_MERCIAN_FS_NG_U_TEX
-TRF_PCS_MERCIAN_FS_G_U_TEX
-TRF_PCS_MERCIAN_HS_NG_U_TEX
-TRF_PCS_MERCIAN_HS_G_U_TEX
-TRF_PCS_MERCIAN_RS_NG_U_TEX
-TRF_PCS_MERCIAN_RS_G_U_TEX
-TRF_PCS_1RY_FS_NG_U_TEX
-TRF_PCS_1RY_FS_G_U_TEX
-TRF_PCS_1RY_HS_NG_U_TEX
-TRF_PCS_1RY_HS_G_U_TEX
-TRF_PCS_1RY_RS_NG_U_TEX
-TRF_PCS_1RY_RS_G_U_TEX
-TRF_PCS_RAFREG_FS_NG_U_TEX
-TRF_PCS_RAFREG_FS_G_U_TEX
-TRF_PCS_RAFREG_HS_NG_U_TEX
-TRF_PCS_RAFREG_HS_G_U_TEX
-TRF_PCS_RAFREG_RS_NG_U_TEX
-TRF_PCS_RAFREG_RS_G_U_TEX
+TRF_BATLSKIN_REVISION_CREW_SCRIM
+TRF_BATLSKIN_REVISION_IR
+TRF_BATLSKIN_REVISION_NETTING
+TRF_BATLSKIN_REVISION_NETTING_IR
+TRF_BATLSKIN_REVISION_PRSN
+TRF_BATLSKIN_REVISION_SCRIM_OAK
+TRF_BATLSKIN_REVISION_STRIP_SCRIM
+TRF_BATLSKIN_REVISION_UN
 ```
 
 ### PJHQ Patches - TRF UKAF SFSG (`trf_ukaf_sfsg`)
 
 - Config patch: `PJHQ_Patch_TRFUKAF_SFSG`
-- Required addons: `PJHQ_Patch_TRFUKAF_Main`, `TRF_UKAF`
+- Required addons: `PJHQ_Patch_TRFUKAF_Main`, `TRF_UKAF_SFSG`
 
 **Helmet armor (1)**
 
@@ -339,64 +151,177 @@ TRF_CRYE_G4_RMC_PCU_TEX
 TRF_DRYSUIT_TEX
 ```
 
-### PJHQ Patches - TRF UKAF Shooter (`trf_ukaf_shooter`)
+### PJHQ Patches - TRF UKAF Uniforms (`trf_ukaf_uniforms`)
 
-- Config patch: `PJHQ_Patch_TRFUKAF_SHOOTER`
-- Required addons: `PJHQ_Patch_TRFUKAF_Main`, `TRF_UKAF_SHOOTER`
+- Config patch: `PJHQ_Patch_TRFUKAF_UNIFORMS`
+- Required addons: `PJHQ_Patch_TRFUKAF_Main`, `TRF_UKAF_UNIFORMS`
 
-**Vest armor (10)**
-
-```text
-TRF_VIRTUS_SHOOTER_RIFLEMAN
-TRF_VIRTUS_SHOOTER_RIFLEMAN_2
-TRF_VIRTUS_SHOOTER_RIFLEMAN_3
-TRF_VIRTUS_SHOOTER_IC
-TRF_VIRTUS_SHOOTER_IC_2
-TRF_VIRTUS_SHOOTER_IC_3
-TRF_VIRTUS_SHOOTER_MEDIC
-TRF_VIRTUS_SHOOTER_GRENADIER
-TRF_VIRTUS_SHOOTER_GUNNER
-TRF_VIRTUS_SHOOTER_SHARPSHOOTER
-```
-
-### PJHQ Patches - TRF UKAF Smock Insignia (`trf_ukaf_smock_insignia`)
-
-- Config patch: `PJHQ_Patch_TRFUKAF_SMOCK_INSIGNIA`
-- Required addons: `PJHQ_Patch_TRFUKAF_Main`, `TRF_UKAF`
-
-**Hidden from Eden/Zeus placement (12)**
+**Hidden from Eden/Zeus placement (199)**
 
 ```text
+TRF_CS95_1RIF_FS_G_U_TEX
+TRF_CS95_1RIF_FS_NG_U_TEX
+TRF_CS95_1RIF_HS_G_U_TEX
+TRF_CS95_1RIF_HS_NG_U_TEX
+TRF_CS95_1RIF_RS_G_U_TEX
+TRF_CS95_1RIF_RS_NG_U_TEX
+TRF_CS95_1RY_FS_G_U_TEX
+TRF_CS95_1RY_FS_NG_U_TEX
+TRF_CS95_1RY_HS_G_U_TEX
+TRF_CS95_1RY_HS_NG_U_TEX
+TRF_CS95_1RY_RS_G_U_TEX
+TRF_CS95_1RY_RS_NG_U_TEX
+TRF_CS95_2PARA_FS_G_U_TEX
+TRF_CS95_2PARA_FS_NG_U_TEX
+TRF_CS95_2PARA_HS_G_U_TEX
+TRF_CS95_2PARA_HS_NG_U_TEX
+TRF_CS95_2PARA_RS_G_U_TEX
+TRF_CS95_2PARA_RS_NG_U_TEX
+TRF_CS95_3SCOTS_FS_G_U_TEX
+TRF_CS95_3SCOTS_FS_NG_U_TEX
+TRF_CS95_3SCOTS_HS_G_U_TEX
+TRF_CS95_3SCOTS_HS_NG_U_TEX
+TRF_CS95_3SCOTS_RS_G_U_TEX
+TRF_CS95_3SCOTS_RS_NG_U_TEX
+TRF_CS95_FS_G_T
+TRF_CS95_FS_NG_T
+TRF_CS95_HS_G_T
+TRF_CS95_HS_NG_T
+TRF_CS95_MERCIAN_FS_G_U_TEX
+TRF_CS95_MERCIAN_FS_NG_U_TEX
+TRF_CS95_MERCIAN_HS_G_U_TEX
+TRF_CS95_MERCIAN_HS_NG_U_TEX
+TRF_CS95_MERCIAN_RS_G_U_TEX
+TRF_CS95_MERCIAN_RS_NG_U_TEX
+TRF_CS95_RAFREG_FS_G_U_TEX
+TRF_CS95_RAFREG_FS_NG_U_TEX
+TRF_CS95_RAFREG_HS_G_U_TEX
+TRF_CS95_RAFREG_HS_NG_U_TEX
+TRF_CS95_RAFREG_RS_G_U_TEX
+TRF_CS95_RAFREG_RS_NG_U_TEX
+TRF_CS95_RMP156_CDO_FS_G_U_TEX
+TRF_CS95_RMP156_CDO_FS_NG_U_TEX
+TRF_CS95_RMP156_CDO_HS_G_U_TEX
+TRF_CS95_RMP156_CDO_HS_NG_U_TEX
+TRF_CS95_RMP156_CDO_RS_G_U_TEX
+TRF_CS95_RMP156_CDO_RS_NG_U_TEX
+TRF_CS95_RMP156_FS_G_U_TEX
+TRF_CS95_RMP156_FS_NG_U_TEX
+TRF_CS95_RMP156_HS_G_U_TEX
+TRF_CS95_RMP156_HS_NG_U_TEX
+TRF_CS95_RMP156_RS_G_U_TEX
+TRF_CS95_RMP156_RS_NG_U_TEX
+TRF_CS95_RMP_CDO_FS_G_U_TEX
+TRF_CS95_RMP_CDO_FS_NG_U_TEX
+TRF_CS95_RMP_CDO_HS_G_U_TEX
+TRF_CS95_RMP_CDO_HS_NG_U_TEX
+TRF_CS95_RMP_CDO_RS_G_U_TEX
+TRF_CS95_RMP_CDO_RS_NG_U_TEX
+TRF_CS95_RMP_FS_G_U_TEX
+TRF_CS95_RMP_FS_NG_U_TEX
+TRF_CS95_RMP_HS_G_U_TEX
+TRF_CS95_RMP_HS_NG_U_TEX
+TRF_CS95_RMP_RS_G_U_TEX
+TRF_CS95_RMP_RS_NG_U_TEX
+TRF_CS95_RS_G_T
+TRF_CS95_RS_NG_T
+TRF_PCS_1RIF_FS_G_U_TEX
+TRF_PCS_1RIF_FS_NG_U_TEX
+TRF_PCS_1RIF_HS_G_U_TEX
+TRF_PCS_1RIF_HS_NG_U_TEX
+TRF_PCS_1RIF_RS_G_U_TEX
+TRF_PCS_1RIF_RS_NG_U_TEX
+TRF_PCS_1RY_FS_G_U_TEX
+TRF_PCS_1RY_FS_NG_U_TEX
+TRF_PCS_1RY_HS_G_U_TEX
+TRF_PCS_1RY_HS_NG_U_TEX
+TRF_PCS_1RY_RS_G_U_TEX
+TRF_PCS_1RY_RS_NG_U_TEX
+TRF_PCS_2PARA_FS_G_U_TEX
+TRF_PCS_2PARA_FS_NG_U_TEX
+TRF_PCS_2PARA_HS_G_U_TEX
+TRF_PCS_2PARA_HS_NG_U_TEX
+TRF_PCS_2PARA_RS_G_U_TEX
+TRF_PCS_2PARA_RS_NG_U_TEX
+TRF_PCS_3SCOTS_FS_G_U_TEX
+TRF_PCS_3SCOTS_FS_NG_U_TEX
+TRF_PCS_3SCOTS_HS_G_U_TEX
+TRF_PCS_3SCOTS_HS_NG_U_TEX
+TRF_PCS_3SCOTS_RS_G_U_TEX
+TRF_PCS_3SCOTS_RS_NG_U_TEX
+TRF_PCS_FS_G_U_TEX
+TRF_PCS_FS_NG_U_TEX
+TRF_PCS_HS_G_U_TEX
+TRF_PCS_HS_NG_U_TEX
+TRF_PCS_MERCIAN_FS_G_U_TEX
+TRF_PCS_MERCIAN_FS_NG_U_TEX
+TRF_PCS_MERCIAN_HS_G_U_TEX
+TRF_PCS_MERCIAN_HS_NG_U_TEX
+TRF_PCS_MERCIAN_RS_G_U_TEX
+TRF_PCS_MERCIAN_RS_NG_U_TEX
+TRF_PCS_RAFREG_FS_G_U_TEX
+TRF_PCS_RAFREG_FS_NG_U_TEX
+TRF_PCS_RAFREG_HS_G_U_TEX
+TRF_PCS_RAFREG_HS_NG_U_TEX
+TRF_PCS_RAFREG_RS_G_U_TEX
+TRF_PCS_RAFREG_RS_NG_U_TEX
+TRF_PCS_RMP156_CDO_FS_G_U_TEX
+TRF_PCS_RMP156_CDO_FS_NG_U_TEX
+TRF_PCS_RMP156_CDO_HS_G_U_TEX
+TRF_PCS_RMP156_CDO_HS_NG_U_TEX
+TRF_PCS_RMP156_CDO_RS_G_U_TEX
+TRF_PCS_RMP156_CDO_RS_NG_U_TEX
+TRF_PCS_RMP156_FS_G_U_TEX
+TRF_PCS_RMP156_FS_NG_U_TEX
+TRF_PCS_RMP156_HS_G_U_TEX
+TRF_PCS_RMP156_HS_NG_U_TEX
+TRF_PCS_RMP156_RS_G_U_TEX
+TRF_PCS_RMP156_RS_NG_U_TEX
+TRF_PCS_RMP_CDO_FS_G_U_TEX
+TRF_PCS_RMP_CDO_FS_NG_U_TEX
+TRF_PCS_RMP_CDO_HS_G_U_TEX
+TRF_PCS_RMP_CDO_HS_NG_U_TEX
+TRF_PCS_RMP_CDO_RS_G_U_TEX
+TRF_PCS_RMP_CDO_RS_NG_U_TEX
+TRF_PCS_RMP_FS_G_U_TEX
+TRF_PCS_RMP_FS_NG_U_TEX
+TRF_PCS_RMP_HS_G_U_TEX
+TRF_PCS_RMP_HS_NG_U_TEX
+TRF_PCS_RMP_RS_G_U_TEX
+TRF_PCS_RMP_RS_NG_U_TEX
+TRF_PCS_RS_G_U_TEX
+TRF_PCS_RS_NG_U_TEX
 TRF_SMOCK_1RIF_G_T
 TRF_SMOCK_1RIF_NG_T
+TRF_SMOCK_1RY_G_T
+TRF_SMOCK_1RY_NG_T
 TRF_SMOCK_2PARA_G_T
 TRF_SMOCK_2PARA_NG_T
 TRF_SMOCK_3SCOTS_G_T
 TRF_SMOCK_3SCOTS_NG_T
+TRF_SMOCK_G_T
 TRF_SMOCK_MERCIAN_G_T
 TRF_SMOCK_MERCIAN_NG_T
-TRF_SMOCK_1RY_G_T
-TRF_SMOCK_1RY_NG_T
+TRF_SMOCK_NG_T
 TRF_SMOCK_RAFREG_G_T
 TRF_SMOCK_RAFREG_NG_T
-```
-
-### PJHQ Patches - TRF UKAF UBACS (`trf_ukaf_ubacs`)
-
-- Config patch: `PJHQ_Patch_TRFUKAF_UBACS`
-- Required addons: `PJHQ_Patch_TRFUKAF_Main`, `TRF_UKAF_UBACS`
-
-**Hidden from Eden/Zeus placement (28)**
-
-```text
-TRF_UBACS_FS_G_T
-TRF_UBACS_FS_NG_T
-TRF_UBACS_HS_G_T
-TRF_UBACS_HS_NG_T
+TRF_SMOCK_RMP156_CDO_G_T
+TRF_SMOCK_RMP156_CDO_NG_T
+TRF_SMOCK_RMP156_G_T
+TRF_SMOCK_RMP156_NG_T
+TRF_SMOCK_RMP_CDO_G_T
+TRF_SMOCK_RMP_CDO_NG_T
+TRF_SMOCK_RMP_G_T
+TRF_SMOCK_RMP_NG_T
+TRF_SNOW_COVERALLS_TEX
 TRF_UBACS_1RIF_FS_G_T
 TRF_UBACS_1RIF_FS_NG_T
 TRF_UBACS_1RIF_HS_G_T
 TRF_UBACS_1RIF_HS_NG_T
+TRF_UBACS_1RY_FS_G_T
+TRF_UBACS_1RY_FS_NG_T
+TRF_UBACS_1RY_HS_G_T
+TRF_UBACS_1RY_HS_NG_T
 TRF_UBACS_2PARA_FS_G_T
 TRF_UBACS_2PARA_FS_NG_T
 TRF_UBACS_2PARA_HS_G_T
@@ -405,33 +330,72 @@ TRF_UBACS_3SCOTS_FS_G_T
 TRF_UBACS_3SCOTS_FS_NG_T
 TRF_UBACS_3SCOTS_HS_G_T
 TRF_UBACS_3SCOTS_HS_NG_T
+TRF_UBACS_FS_G_T
+TRF_UBACS_FS_NG_T
+TRF_UBACS_HS_G_T
+TRF_UBACS_HS_NG_T
 TRF_UBACS_MERCIAN_FS_G_T
 TRF_UBACS_MERCIAN_FS_NG_T
 TRF_UBACS_MERCIAN_HS_G_T
 TRF_UBACS_MERCIAN_HS_NG_T
-TRF_UBACS_1RY_FS_G_T
-TRF_UBACS_1RY_FS_NG_T
-TRF_UBACS_1RY_HS_G_T
-TRF_UBACS_1RY_HS_NG_T
 TRF_UBACS_RAFREG_FS_G_T
 TRF_UBACS_RAFREG_FS_NG_T
 TRF_UBACS_RAFREG_HS_G_T
 TRF_UBACS_RAFREG_HS_NG_T
+TRF_UBACS_RMP156_CDO_FS_G_T
+TRF_UBACS_RMP156_CDO_FS_NG_T
+TRF_UBACS_RMP156_CDO_HS_G_T
+TRF_UBACS_RMP156_CDO_HS_NG_T
+TRF_UBACS_RMP156_FS_G_T
+TRF_UBACS_RMP156_FS_NG_T
+TRF_UBACS_RMP156_HS_G_T
+TRF_UBACS_RMP156_HS_NG_T
+TRF_UBACS_RMP_CDO_FS_G_T
+TRF_UBACS_RMP_CDO_FS_NG_T
+TRF_UBACS_RMP_CDO_HS_G_T
+TRF_UBACS_RMP_CDO_HS_NG_T
+TRF_UBACS_RMP_FS_G_T
+TRF_UBACS_RMP_FS_NG_T
+TRF_UBACS_RMP_HS_G_T
+TRF_UBACS_RMP_HS_NG_T
 ```
 
-### PJHQ Patches - TRF UKAF Webbing (`trf_ukaf_webbing`)
+### PJHQ Patches - TRF UKAF Virtus (`trf_ukaf_virtus`)
 
-- Config patch: `PJHQ_Patch_TRFUKAF_WEBBING`
-- Required addons: `PJHQ_Patch_TRFUKAF_Main`, `TRF_UKAF_WEBBING`
+- Config patch: `PJHQ_Patch_TRFUKAF_VIRTUS`
+- Required addons: `PJHQ_Patch_TRFUKAF_Main`, `TRF_UKAF_VIRTUS`
 
-**Vest armor (5)**
+**Vest armor (28)**
 
 ```text
+TRF_STV_Crew
 TRF_STV_FORDY
 TRF_STV_GUITAR
 TRF_STV_GUITAR2
+TRF_STV_Grenadier
+TRF_STV_Gunner
+TRF_STV_IC
+TRF_STV_IC_2
+TRF_STV_IC_3
+TRF_STV_Medic
+TRF_STV_Pilot
+TRF_STV_Rifleman
+TRF_STV_Rifleman_2
+TRF_STV_Rifleman_3
+TRF_STV_SIGNALLER
 TRF_STV_SPINK
+TRF_STV_Sharpshooter
 TRF_STV_WEBBING_P
+TRF_VIRTUS_SHOOTER_GRENADIER
+TRF_VIRTUS_SHOOTER_GUNNER
+TRF_VIRTUS_SHOOTER_IC
+TRF_VIRTUS_SHOOTER_IC_2
+TRF_VIRTUS_SHOOTER_IC_3
+TRF_VIRTUS_SHOOTER_MEDIC
+TRF_VIRTUS_SHOOTER_RIFLEMAN
+TRF_VIRTUS_SHOOTER_RIFLEMAN_2
+TRF_VIRTUS_SHOOTER_RIFLEMAN_3
+TRF_VIRTUS_SHOOTER_SHARPSHOOTER
 ```
 
 
@@ -441,14 +405,18 @@ TRF_STV_WEBBING_P
 hemtt check
 hemtt dev
 hemtt release
+bun run audit
+bun test
 bun run docs
 bun run docs:refresh
 bun run docs:check
 ```
 
+`bun run audit` reports classname coverage separately from addon dependency and owner load-order issues. It uses declared `CfgPatches` identifiers, follows transitive upstream/local dependencies, and reports missing dependencies and cycles. Dependencies on other mods are accepted only when explicitly listed in the audit's `externalAddons` option; upstream mods' own external requirements are outside this inventory.
+
 `bun run docs` regenerates this file, `WORKSHOP.md`, and `CHANGELOG.md`, creating the ignored armor baseline cache under `source_addons/` when needed. `bun run docs:refresh` rebuilds the armor baseline from the extracted configs and updates classname history. `bun run docs:check` exits with an error when any generated file is stale.
 
-[Changelog](CHANGELOG.md) lists only classes added between the previous and current patch version, with source PBOs. Set the version in `.hemtt/project.toml` before `docs:refresh`; version inventories are retained in `docs/history/patch.json`. Repeated refreshes update the current version without changing the previous version. The first version establishes a baseline. `docs` renders saved history and `docs:check` checks it without updating history.
+[Changelog](CHANGELOG.md) lists classes added between the previous and current patch version, with source PBOs, plus versioned compatibility notes from `docs/release-notes.json`. Set the version in `.hemtt/project.toml` before `docs:refresh`; version inventories are retained in `docs/history/patch.json`. Repeated refreshes update the current version without changing the previous version. The first version establishes a baseline. `docs` renders saved history and `docs:check` checks it without updating history. Edit release notes in their JSON source, not in the generated changelog.
 
 ## Source And Issues
 

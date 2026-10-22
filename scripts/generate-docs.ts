@@ -223,20 +223,15 @@ function renderWorkshop(addons: AddonPatch[], changes: ConfigComparison): string
   const hiddenDeclarations = addons.flatMap((addon) => addon.hidden);
   const uniqueHidden = new Set(hiddenDeclarations);
   const duplicateHidden = hiddenDeclarations.length - uniqueHidden.size;
-  const insigniaClasses = new Set(addons.find((addon) => addon.directory === "trf_ukaf_insignia")?.hidden ?? []);
   const addonSections = addons
     .filter((addon) => addon.helmet.length + addon.vest.length + addon.hidden.length > 0)
     .map((addon) => {
       const heading = addon.displayName.replace("PJHQ Patches - ", "");
-      const overlappingHidden = addon.hidden.filter((className) => insigniaClasses.has(className));
-      const hidden = addon.directory === "trf_ukaf_pcs_insignia" ? addon.hidden.filter((className) => !insigniaClasses.has(className)) : addon.hidden;
-      const overlapNote = addon.directory === "trf_ukaf_pcs_insignia" ? `Also patches all ${overlappingHidden.length} PCS classes listed under UKAF Insignia, plus:` : "";
       return [
         `[h2]${heading}[/h2]`,
         workshopClassList("Helmet armor", addon.helmet),
         workshopClassList("Vest armor", addon.vest),
-        overlapNote,
-        workshopClassList(addon.directory === "trf_ukaf_pcs_insignia" ? "Additional hidden classes" : "Hidden from Eden/Zeus placement", hidden)
+        workshopClassList("Hidden from Eden/Zeus placement", addon.hidden)
       ]
         .filter((part) => part !== "")
         .join("\n");

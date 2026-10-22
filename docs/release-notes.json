@@ -1,0 +1,7 @@
+{
+  "0.4.0": [
+    "Updated compatibility for TRF UKAF 2.1.1: patch components now mirror their upstream owning PBOs (Pilot, Accessories, Revision, Virtus, Uniforms and SFSG), plus shared main. Each component depends on its matching upstream addon. Removed the obsolete combined UKAF, Customs, CS95/insignia, UBACS, Shooter and Webbing patch splits.",
+    "Consolidated uniform-body declarations into the Uniforms patch, removing 18 duplicate PCS declarations without changing target coverage. Replace the old patch addons directory when updating so obsolete PBOs are not left installed.",
+    "Added Eden/Zeus hiding for 72 RMP and RMP156 uniform-body classes, including CDO variants: 24 CS95, 24 PCS, 8 smocks and 16 UBACS. Wearable Arsenal access and existing armor values are unchanged."
+  ]
+}

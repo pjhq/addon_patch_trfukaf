@@ -3417,6 +3417,1880 @@
           ]
         }
       ]
+    },
+    {
+      "version": "0.4.0",
+      "inventory": [
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CRYE_G4_B_G_RS_TEX",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CRYE_G4_B_NG_FS_TEX",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CRYE_G4_B_NG_RS_TEX",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CRYE_G4_BLNK_G_RS_TEX",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CRYE_G4_BLNK_NG_FS_TEX",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CRYE_G4_BLNK_NG_RS_TEX",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CRYE_G4_BLNK_PCU_TEX",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CRYE_G4_RMC_G_RS_TEX",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CRYE_G4_RMC_NG_FS_TEX",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CRYE_G4_RMC_NG_RS_TEX",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CRYE_G4_RMC_PCU_TEX",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CRYE_G4_RNC_PCU_TEX",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_1RIF_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_1RIF_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_1RIF_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_1RIF_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_1RIF_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_1RIF_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_1RY_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_1RY_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_1RY_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_1RY_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_1RY_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_1RY_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_2PARA_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_2PARA_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_2PARA_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_2PARA_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_2PARA_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_2PARA_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_3SCOTS_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_3SCOTS_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_3SCOTS_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_3SCOTS_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_3SCOTS_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_3SCOTS_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_FORDY_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_ACCESSORIES"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_FS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_FS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_HS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_HS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_MERCIAN_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_MERCIAN_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_MERCIAN_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_MERCIAN_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_MERCIAN_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_MERCIAN_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RAFREG_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RAFREG_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RAFREG_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RAFREG_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RAFREG_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RAFREG_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RMP_CDO_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RMP_CDO_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RMP_CDO_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RMP_CDO_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RMP_CDO_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RMP_CDO_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RMP_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RMP_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RMP_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RMP_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RMP_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RMP_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RMP156_CDO_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RMP156_CDO_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RMP156_CDO_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RMP156_CDO_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RMP156_CDO_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RMP156_CDO_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RMP156_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RMP156_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RMP156_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RMP156_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RMP156_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RMP156_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_CS95_RS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_DRYSUIT_TEX",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_FLIGHTSUIT_18SQN_TEX",
+          "addons": [
+            "TRF_PILOT"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_FLIGHTSUIT_617SQN_TEX",
+          "addons": [
+            "TRF_PILOT"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_FLIGHTSUIT_656SQN_TEX",
+          "addons": [
+            "TRF_PILOT"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_FLIGHTSUIT_814SQN_TEX",
+          "addons": [
+            "TRF_PILOT"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_FLIGHTSUIT_BLANK_TEX",
+          "addons": [
+            "TRF_PILOT"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_1RIF_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_1RIF_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_1RIF_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_1RIF_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_1RIF_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_1RIF_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_1RY_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_1RY_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_1RY_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_1RY_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_1RY_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_1RY_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_2PARA_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_2PARA_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_2PARA_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_2PARA_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_2PARA_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_2PARA_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_3SCOTS_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_3SCOTS_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_3SCOTS_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_3SCOTS_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_3SCOTS_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_3SCOTS_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_MERCIAN_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_MERCIAN_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_MERCIAN_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_MERCIAN_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_MERCIAN_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_MERCIAN_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RAFREG_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RAFREG_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RAFREG_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RAFREG_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RAFREG_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RAFREG_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RMP_CDO_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RMP_CDO_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RMP_CDO_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RMP_CDO_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RMP_CDO_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RMP_CDO_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RMP_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RMP_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RMP_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RMP_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RMP_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RMP_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RMP156_CDO_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RMP156_CDO_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RMP156_CDO_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RMP156_CDO_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RMP156_CDO_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RMP156_CDO_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RMP156_FS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RMP156_FS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RMP156_HS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RMP156_HS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RMP156_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RMP156_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RS_G_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_PCS_RS_NG_U_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_1RIF_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_1RIF_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_1RY_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_1RY_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_2PARA_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_2PARA_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_3SCOTS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_3SCOTS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_MERCIAN_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_MERCIAN_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_RAFREG_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_RAFREG_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_RMP_CDO_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_RMP_CDO_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_RMP_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_RMP_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_RMP156_CDO_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_RMP156_CDO_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_RMP156_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SMOCK_RMP156_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_SNOW_COVERALLS_TEX",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_1RIF_FS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_1RIF_FS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_1RIF_HS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_1RIF_HS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_1RY_FS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_1RY_FS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_1RY_HS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_1RY_HS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_2PARA_FS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_2PARA_FS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_2PARA_HS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_2PARA_HS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_3SCOTS_FS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_3SCOTS_FS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_3SCOTS_HS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_3SCOTS_HS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_FS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_FS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_HS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_HS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_MERCIAN_FS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_MERCIAN_FS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_MERCIAN_HS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_MERCIAN_HS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_RAFREG_FS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_RAFREG_FS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_RAFREG_HS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_RAFREG_HS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_RMP_CDO_FS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_RMP_CDO_FS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_RMP_CDO_HS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_RMP_CDO_HS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_RMP_FS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_RMP_FS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_RMP_HS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_RMP_HS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_RMP156_CDO_FS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_RMP156_CDO_FS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_RMP156_CDO_HS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_RMP156_CDO_HS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_RMP156_FS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_RMP156_FS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_RMP156_HS_G_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgVehicles",
+          "className": "TRF_UBACS_RMP156_HS_NG_T",
+          "addons": [
+            "TRF_UKAF_UNIFORMS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_BATLSKIN_REVISION",
+          "addons": [
+            "TRF_UKAF_REVISION"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_BATLSKIN_REVISION_CREW",
+          "addons": [
+            "TRF_UKAF_REVISION"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_BATLSKIN_REVISION_CREW_MANDIBLE",
+          "addons": [
+            "TRF_UKAF_REVISION"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_BATLSKIN_REVISION_CREW_MANDIBLE_SCRIM",
+          "addons": [
+            "TRF_UKAF_REVISION"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_BATLSKIN_REVISION_CREW_SCRIM",
+          "addons": [
+            "TRF_UKAF_REVISION"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_BATLSKIN_REVISION_IR",
+          "addons": [
+            "TRF_UKAF_REVISION"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_BATLSKIN_REVISION_NETTING",
+          "addons": [
+            "TRF_UKAF_REVISION"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_BATLSKIN_REVISION_NETTING_IR",
+          "addons": [
+            "TRF_UKAF_REVISION"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_BATLSKIN_REVISION_PRSN",
+          "addons": [
+            "TRF_UKAF_REVISION"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_BATLSKIN_REVISION_SCRIM_OAK",
+          "addons": [
+            "TRF_UKAF_REVISION"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_BATLSKIN_REVISION_STRIP_SCRIM",
+          "addons": [
+            "TRF_UKAF_REVISION"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_BATLSKIN_REVISION_UN",
+          "addons": [
+            "TRF_UKAF_REVISION"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_FAST_SFHC",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_Crew",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_FORDY",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_Grenadier",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_GUITAR",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_GUITAR2",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_Gunner",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_IC",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_IC_2",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_IC_3",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_Medic",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_Pilot",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_Rifleman",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_Rifleman_2",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_Rifleman_3",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_Sharpshooter",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_SIGNALLER",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_SPINK",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_STV_WEBBING_P",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_VIRTUS_SHOOTER_GRENADIER",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_VIRTUS_SHOOTER_GUNNER",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_VIRTUS_SHOOTER_IC",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_VIRTUS_SHOOTER_IC_2",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_VIRTUS_SHOOTER_IC_3",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_VIRTUS_SHOOTER_MEDIC",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_VIRTUS_SHOOTER_RIFLEMAN",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_VIRTUS_SHOOTER_RIFLEMAN_2",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_VIRTUS_SHOOTER_RIFLEMAN_3",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "TRF_VIRTUS_SHOOTER_SHARPSHOOTER",
+          "addons": [
+            "TRF_UKAF_VIRTUS"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "UKAF_C2R_CBAV_JTAC",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "UKAF_C2R_CBAV_JTAC_2",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "UKAF_C2R_CBAV_MARKSMAN",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "UKAF_C2R_CBAV_MEDIC",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "UKAF_C2R_CBAV_RIFLEMAN",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "UKAF_C2R_CBAV_RIFLEMAN_2",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "UKAF_C2R_CBAV_SL",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        },
+        {
+          "registry": "CfgWeapons",
+          "className": "UKAF_C2R_CBAV_SL_2",
+          "addons": [
+            "TRF_UKAF_SFSG"
+          ]
+        }
+      ]
     }
   ]
 }
