@@ -3,7 +3,17 @@ import { mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 
-import { inventoryFromConfigs, patchedInventory, prepareHistory, readHistory, readPatchVersion, refreshHistory, renderChangelog, saveHistory } from "../scripts/lib/changelog.ts";
+import {
+  inventoryFromConfigs,
+  patchedInventory,
+  prepareHistory,
+  readHistory,
+  readPatchVersion,
+  readReleaseNotes,
+  refreshHistory,
+  renderChangelog,
+  saveHistory
+} from "../scripts/lib/changelog.ts";
 
 const inventory = (content: string, addon = "TRF") => inventoryFromConfigs([{ addon, content }]);
 const oldInventory = inventory("class CfgWeapons { class Old {}; };");
@@ -54,9 +64,7 @@ describe("versioned patch changelog", () => {
       { addon: "A", content: "class CfgWeapons { class Shared {}; class Alpha {}; };" }
     ]);
     const next = refreshHistory(baseline, source, "0.1.1");
-    expect(renderChangelog(next).trim()).toBe(
-      "## 0.1.1\n\n### A.pbo\n\n- `Alpha`\n- `Shared`\n\n### Z.pbo\n\n- `Shared`\n- `Zebra`"
-    );
+    expect(renderChangelog(next).trim()).toBe("## 0.1.1\n\n### A.pbo\n\n- `Alpha`\n- `Shared`\n\n### Z.pbo\n\n- `Shared`\n- `Zebra`");
   });
 
   test("addon moves and property changes are not additions", () => {
@@ -73,6 +81,29 @@ describe("versioned patch changelog", () => {
     const targets = [{ directory: "patch", helmet: [], vest: ["Vest"], hidden: [] }];
     expect(patchedInventory(source, targets)).toEqual([{ registry: "CfgWeapons", className: "Vest", addons: ["A", "Z"] }]);
     expect(() => patchedInventory(source, [{ directory: "patch", helmet: [], vest: ["Missing"], hidden: [] }])).toThrow("not found");
+  });
+
+  test("renders compatibility notes without inventing classname additions", () => {
+    const history = refreshHistory(undefined, oldInventory, "0.1.1");
+    expect(renderChangelog(history, ["Repaired owner dependencies."]).trim()).toBe("## 0.1.1\n\n### Compatibility changes\n\n- Repaired owner dependencies.");
+    expect(renderChangelog(history, ["Repaired owner dependencies."])).not.toContain("`Old`");
+  });
+
+  test("reads only the selected version's release notes and validates the source", async () => {
+    const root = await mkdtemp(path.join(os.tmpdir(), "trf-release-notes-test-"));
+    try {
+      expect(await readReleaseNotes(root, "0.1.1")).toEqual([]);
+      await mkdir(path.join(root, "docs"));
+      const file = path.join(root, "docs/release-notes.json");
+      await writeFile(file, JSON.stringify({ "0.1.0": ["Old release."], "0.1.1": ["Repaired dependencies."] }));
+      expect(await readReleaseNotes(root, "0.1.1")).toEqual(["Repaired dependencies."]);
+      expect(await readReleaseNotes(root, "0.1.2")).toEqual([]);
+      expect(await readReleaseNotes(root, undefined)).toEqual([]);
+      await writeFile(file, '{"0.1.1":[false]}');
+      expect(await readReleaseNotes(root, "0.1.1").catch((error: unknown) => error)).toMatchObject({ message: "Invalid release notes: docs/release-notes.json" });
+    } finally {
+      await rm(root, { recursive: true, force: true });
+    }
   });
 
   test("refresh uses HEMTT version, ordinary docs do not update history, and legacy baseline migrates", async () => {
@@ -100,7 +131,7 @@ describe("versioned patch changelog", () => {
       await writeFile(file, JSON.stringify({ schemaVersion: 1, baselineInventory: oldInventory, inventory: oldInventory, entries: [] }));
       expect((await readHistory(root))?.versions[0]?.version).toBe("0.1.1");
       await writeFile(file, '{"schemaVersion":2}');
-      await expect(readHistory(root)).rejects.toThrow("Invalid classname history");
+      expect(await readHistory(root).catch((error: unknown) => error)).toMatchObject({ message: "Invalid classname history: docs/history/patch.json" });
     } finally {
       await rm(root, { recursive: true, force: true });
     }

@@ -2,7 +2,7 @@ import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 import { compareConfigs, UNKNOWN_VALUE, type ConfigComparison } from "./lib/config-comparison.ts";
-import { prepareHistory, renderChangelog, saveHistory } from "./lib/changelog.ts";
+import { prepareHistory, readReleaseNotes, renderChangelog, saveHistory } from "./lib/changelog.ts";
 
 interface AddonPatch {
   directory: string;
@@ -128,7 +128,7 @@ function renderReadme(addons: AddonPatch[], changes: ConfigComparison): string {
     "## What It Changes",
     "",
     `- Rebalances **${helmets.length} helmets** and **${vests.length} vests** across ${patchedAddons.filter((addon) => addon.helmet.length + addon.vest.length > 0).length} component patches.`,
-    `- Hides **${uniqueHidden.size} unique \`CfgVehicles\` classes** from Eden/Zeus placement using ${hiddenDeclarations.length} component declarations. ${duplicateHidden} PCS uniform classes are declared in both insignia component patches.`,
+    `- Hides **${uniqueHidden.size} unique \`CfgVehicles\` classes** from Eden/Zeus placement using ${hiddenDeclarations.length} component declarations.${duplicateHidden > 0 ? ` ${duplicateHidden} duplicate declarations.` : ""}`,
     "- Changes config values only. This project contains no replacement models, textures, sounds, scripts or event handlers.",
     "- Does not change `scopeArsenal`, so wearable gear remains available in the Arsenal where the source addon exposes it.",
     "- See [Damage And Armor Reference](DAMAGE_INFO.md) for how ammunition and personal armor values interact under vanilla and ACE Medical damage handling.",
@@ -178,14 +178,18 @@ function renderReadme(addons: AddonPatch[], changes: ConfigComparison): string {
     "hemtt check",
     "hemtt dev",
     "hemtt release",
+    "bun run audit",
+    "bun test",
     "bun run docs",
     "bun run docs:refresh",
     "bun run docs:check",
     "```",
     "",
+    "`bun run audit` reports classname coverage separately from addon dependency and owner load-order issues. It uses declared `CfgPatches` identifiers, follows transitive upstream/local dependencies, and reports missing dependencies and cycles. Dependencies on other mods are accepted only when explicitly listed in the audit's `externalAddons` option; upstream mods' own external requirements are outside this inventory.",
+    "",
     "`bun run docs` regenerates this file, `WORKSHOP.md`, and `CHANGELOG.md`, creating the ignored armor baseline cache under `source_addons/` when needed. `bun run docs:refresh` rebuilds the armor baseline from the extracted configs and updates classname history. `bun run docs:check` exits with an error when any generated file is stale.",
     "",
-    "[Changelog](CHANGELOG.md) lists only classes added between the previous and current patch version, with source PBOs. Set the version in `.hemtt/project.toml` before `docs:refresh`; version inventories are retained in `docs/history/patch.json`. Repeated refreshes update the current version without changing the previous version. The first version establishes a baseline. `docs` renders saved history and `docs:check` checks it without updating history.",
+    "[Changelog](CHANGELOG.md) lists classes added between the previous and current patch version, with source PBOs, plus versioned compatibility notes from `docs/release-notes.json`. Set the version in `.hemtt/project.toml` before `docs:refresh`; version inventories are retained in `docs/history/patch.json`. Repeated refreshes update the current version without changing the previous version. The first version establishes a baseline. `docs` renders saved history and `docs:check` checks it without updating history. Edit release notes in their JSON source, not in the generated changelog.",
     "",
     "## Source And Issues",
     "",
@@ -250,7 +254,7 @@ function renderWorkshop(addons: AddonPatch[], changes: ConfigComparison): string
     "[h1]Summary[/h1]",
     "[list]",
     `[*]Rebalances ${helmets.length} helmets and ${vests.length} vests.`,
-    `[*]Hides ${uniqueHidden.size} unique CfgVehicles classes from Eden/Zeus placement using ${hiddenDeclarations.length} component declarations; ${duplicateHidden} PCS uniform classes are declared in both insignia component patches.`,
+    `[*]Hides ${uniqueHidden.size} unique CfgVehicles classes from Eden/Zeus placement using ${hiddenDeclarations.length} component declarations.${duplicateHidden > 0 ? ` ${duplicateHidden} duplicate declarations.` : ""}`,
     "[*]Leaves scopeArsenal unchanged, so source gear remains available in the Arsenal.",
     "[*]Changes config values only; no models, textures, sounds, scripts or event handlers are replaced.",
     "[/list]",
@@ -309,12 +313,13 @@ async function main(): Promise<void> {
   if (checkOnly && refreshBaselines) throw new Error("--check cannot be combined with --refresh-baselines");
   const addons = await readAddons();
   const history = await prepareHistory(root, refreshBaselines, addons);
+  const releaseNotes = await readReleaseNotes(root, history?.versions.at(-1)?.version);
   const changes = await compareConfigs(root, addons, refreshBaselines);
 
   const results = await Promise.all([
     updateFile("README.md", renderReadme(addons, changes), checkOnly),
     updateFile("WORKSHOP.md", renderWorkshop(addons, changes), checkOnly),
-    updateFile("CHANGELOG.md", renderChangelog(history), checkOnly)
+    updateFile("CHANGELOG.md", renderChangelog(history, releaseNotes), checkOnly)
   ]);
   if (refreshBaselines && history && results.every(Boolean)) await saveHistory(root, history);
   if (results.some((result) => !result)) {

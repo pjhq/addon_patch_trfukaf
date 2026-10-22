@@ -44,5 +44,6 @@ hemtt.exe
 .hemttprivatekey
 docs/*
 !docs/history/
+!docs/release-notes.json
 source_addons
 reports

@@ -1,6 +1,7 @@
 import path from "node:path";
 
 import { childClass, macroArguments, numberProperty, parseConfig, stringProperty, type ConfigClass } from "./arma-config.ts";
+import { auditDependencies, type DependencyAuditOptions } from "./addon-dependencies.ts";
 
 export type AuditCategory = "helmet" | "soldierUnit" | "vest";
 
@@ -33,6 +34,7 @@ export interface PatchInventory {
 }
 
 export interface AuditResult {
+  dependencyIssues: string[];
   candidates: Record<AuditCategory, AuditCandidate[]>;
   missing: Record<AuditCategory, AuditCandidate[]>;
   patchInventory: PatchInventory;
@@ -294,7 +296,7 @@ function isPatched(candidate: AuditCandidate, inventory: PatchInventory): boolea
   return inventory.hidden.has(key);
 }
 
-export function auditConfigs(sourceFiles: AuditFile[], patchFiles: AuditFile[]): AuditResult {
+export function auditConfigs(sourceFiles: AuditFile[], patchFiles: AuditFile[], options: DependencyAuditOptions = {}): AuditResult {
   const { candidates, warnings } = sourceCandidates(sourceFiles);
   const patchInventory = patchedClasses(patchFiles);
   const missing: Record<AuditCategory, AuditCandidate[]> = {
@@ -311,6 +313,7 @@ export function auditConfigs(sourceFiles: AuditFile[], patchFiles: AuditFile[]):
     .sort((left, right) => left.localeCompare(right, "en", { sensitivity: "base" }));
 
   return {
+    dependencyIssues: auditDependencies(sourceFiles, patchFiles, options),
     candidates,
     missing,
     patchInventory,
@@ -356,11 +359,16 @@ export function renderMarkdown(result: AuditResult): string {
     "",
     `Scanned **${result.sourceFileCount}** source config files across **${result.sourceAddons.length}** extracted addons.`,
     `Found **${totalMissing}** missing classnames out of **${totalCandidates}** audit targets.`,
+    "Coverage counts matching patch declarations, not runtime activation; dependency checks are reported separately.",
     "Placeable checks include only `CfgVehicles` classes in a soldier/man inheritance chain; backpacks, props, and wearable inventory classes are excluded.",
     "",
     ...markdownCategory(result, "helmet"),
     ...markdownCategory(result, "vest"),
     ...markdownCategory(result, "soldierUnit"),
+    "## Dependency and load-order issues",
+    "",
+    ...(result.dependencyIssues.length === 0 ? ["No dependency or owner-order issues."] : result.dependencyIssues.map((issue) => `- ${issue}`)),
+    "",
     "## Unexpected hidden placeables",
     "",
     ...(result.unexpectedHidden.length === 0 ? ["No unexpected classnames."] : result.unexpectedHidden.map((className) => `- \`${className}\``)),
@@ -386,6 +394,8 @@ export function printAudit(result: AuditResult): void {
       console.log(`  ${candidate.className}`);
     }
   }
+  console.log(`Dependency/load-order issues: ${result.dependencyIssues.length}`);
+  for (const issue of result.dependencyIssues) console.log(`  ${issue}`);
   console.log(`Unexpected hidden placeables: ${result.unexpectedHidden.length}`);
   for (const className of result.unexpectedHidden) console.log(`  ${className}`);
   if (result.warnings.length > 0) {

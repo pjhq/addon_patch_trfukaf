@@ -147,7 +147,27 @@ export async function saveHistory(root: string, history: ClassHistory): Promise<
   await writeFile(file, text, "utf8");
 }
 
-export function renderChangelog(history: ClassHistory | undefined): string {
+export async function readReleaseNotes(root: string, version: string | undefined): Promise<string[]> {
+  if (!version) return [];
+  const file = path.join(root, "docs/release-notes.json");
+  const text = await readFile(file, "utf8").catch((error: NodeJS.ErrnoException) => {
+    if (error.code !== "ENOENT") throw error;
+    return undefined;
+  });
+  if (text === undefined) return [];
+  const notes: unknown = JSON.parse(text);
+  if (
+    !notes ||
+    typeof notes !== "object" ||
+    Array.isArray(notes) ||
+    !Object.entries(notes).every(([key, value]) => /^\d+\.\d+\.\d+$/.test(key) && Array.isArray(value) && value.every((item) => typeof item === "string" && item.trim().length > 0))
+  ) {
+    throw new Error("Invalid release notes: docs/release-notes.json");
+  }
+  return (notes as Record<string, string[]>)[version] ?? [];
+}
+
+export function renderChangelog(history: ClassHistory | undefined, notes: string[] = []): string {
   const lines: string[] = [];
   if (!history) return lines.join("\n");
   const current = history.versions.at(-1);
@@ -156,6 +176,7 @@ export function renderChangelog(history: ClassHistory | undefined): string {
   const oldKeys = new Set(previous?.inventory.map(key));
   const added = previous ? current.inventory.filter((item) => !oldKeys.has(key(item))) : [];
   lines.push(`## ${current.version}`, "");
+  if (notes.length > 0) lines.push("### Compatibility changes", "", ...notes.map((note) => `- ${note}`), "");
   const groups = new Map<string, Set<string>>();
   for (const item of added) {
     for (const addon of item.addons) {
